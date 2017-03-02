@@ -1,0 +1,135 @@
+﻿@model List<FindAFixMVC.Models.DBContext.UserJob>
+@{
+    ViewBag.Title = "Locations";
+}
+
+@{
+    Layout = "~/Views/Shared/_LayoutTechnician.cshtml";
+}
+
+<h2>GoogleMaps</h2>
+<head>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCltr_4hTmLvdTVWEuQ97mMZ6mTB_4YLCA&callback=myMap&libraries=places,geometry" async defer></script>
+</head>
+<script>
+    function myMap() {
+
+        //Saves the positions history
+        var path = [];
+        var myLatLng = { lat: 43.6535, lng: -79.3832 };
+
+        map = new google.maps.Map(document.getElementById('myMap'), {
+            center: myLatLng,
+            zoom: 18,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        });
+
+        function addMarker(latitude, longitude, JobTitle, JobId) {
+            var latLng = new google.maps.LatLng(latitude, longitude);
+            var marker = new google.maps.Marker({
+                position: latLng,
+                map: map
+            });
+
+
+            var contentString = '<h4><center>Job Title: <br />' + JobTitle + '<h4>' + '<br />' + '<a href="../Jobs/Details/' + JobId + '"><button class= "w3-btn w3-hover-blue">Details</button></a></center>';
+
+            var infoWindow = new google.maps.InfoWindow({
+                content: contentString
+            });
+
+            google.maps.event.addListener(marker, 'click', function(){
+                infoWindow.open(map, marker)
+            })
+        }
+
+        @foreach(var item in Model)
+        {
+            @:addMarker(@item.Latitude, @item.Longitude, '@item.JobTitle', @item.Id);
+        }
+
+	    var infoWindow = new google.maps.InfoWindow({map: map});
+
+	    //HTML5 GeoLocation(Locating Position)
+	    if(navigator.geolocation){
+	        navigator.geolocation.getCurrentPosition(function (position) {
+
+	            //Sets the location
+	            var pos = {
+	                lat: position.coords.latitude,
+	                lng: position.coords.longitude
+	            };
+
+	            document.getElementById("showPoints").addEventListener("click", function () {
+	                var radius_km = document.getElementById("radius_km").value;
+
+
+	                if (radius_km == 1) {
+	                    map.setCenter(pos);
+	                    map.setZoom(17);
+	                }
+	                if (radius_km == 5) {
+	                    map.setCenter(pos);
+	                    map.setZoom(16);
+	                }
+	                if (radius_km == 10) {
+	                    map.setCenter(pos);
+	                    map.setZoom(15);
+	                }
+	                if (radius_km == 20) {
+	                    map.setCenter(pos);
+	                    map.setZoom(13);
+	                }
+
+
+	            });
+
+	            infoWindow.setPosition(pos);
+	            infoWindow.setContent('Your Location');
+	            map.setCenter(pos);
+
+	            
+		    }, function(){
+			    handleLocationError(true, infoWindow, map.getCenter());
+		    });
+		    } else {
+			    //Browser does not support Geolocation
+			    handleLocationError(false, infoWindow, map.getCenter());
+	    }
+
+    }
+
+    function placeMarkerAndPanTo(latLng, map){
+	    var marker = new google.maps.Marker({
+		    position: latLng,
+		    map: map
+	    });
+	    map.panTo(latLng);
+    }
+
+
+    function handleLocationError(browserHasGeoLocation, infoWindow, pos){
+	    infoWindow.setPosition(pos);
+	    infoWindow.setContent(browserHasGeoLocation ?
+							    'Error: The Geolocation service failed.' :
+							    'Error: Your browser does not support Geolocation.');
+    }
+
+
+</script>
+
+@using (Html.BeginForm())
+{
+    <select id="radius_km">
+        <option value="1">1km</option>
+        <option value="5">5km</option>
+        <option value="10">10km</option>
+        <option value="20">20km</option>
+    </select>
+}
+
+<div><button id="showPoints">Show</button></div>
+
+<div id="myMap" style="width:100%; height:500px"></div>
+
+

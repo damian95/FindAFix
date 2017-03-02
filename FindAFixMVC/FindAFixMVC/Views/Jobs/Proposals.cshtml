@@ -1,0 +1,63 @@
+﻿@model IEnumerable<FindAFixMVC.Models.DBContext.Proposal>
+@using FindAFixMVC.Models
+@using FindAFixMVC.Models.DBContext
+
+@{
+    ViewBag.Title = "Proposals";
+}
+<center>
+    <br />
+    <br />
+    <h2>Proposals</h2>
+
+    <div class="w3-responsive">
+        <table class="w3-table-all w3-hoverable">
+            <thead>
+                <tr class="w3-grey">
+                    <th>
+                        @Html.DisplayNameFor(model => model.PriceEst)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Message)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.AvailabilityDate)
+                    </th>
+                    <th></th>
+                </tr>
+            </thead>
+            @foreach (var item in Model)
+            {
+                <tr class="w3-hover-black w3-cyan">
+                    <td>
+                        @Html.DisplayFor(modelItem => item.PriceEst)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Message)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.AvailabilityDate)
+                    </td>
+                    <td>
+                        @using (var db = new ApplicationDbContext())
+                        {
+                            var job = (from UserJob in db.UserJobs
+                                       where UserJob.Id == item.UserJob_Id
+                                       select UserJob).FirstOrDefault();
+                            if (job.Technician_Id != 0 && item.Technician_Id == job.Technician_Id)
+                            {
+                                <div>Accepted</div>
+                            }
+                            else if (job.Technician_Id == 0)
+                            {
+                                <input type="button" class="w3-btn w3-green" value="Accept" onclick="location.href='@Url.Action("AcceptProposal", "Jobs", new { id = item.Id })'" />
+                            }
+                        }
+
+                    </td>
+                </tr>
+            }
+
+        </table>
+    </div>
+</center>

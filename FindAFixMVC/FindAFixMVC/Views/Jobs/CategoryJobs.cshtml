@@ -1,0 +1,61 @@
+﻿@model IEnumerable<FindAFixMVC.Models.ViewModels.CategoryJobsViewModel>
+
+@{
+    ViewBag.Title = "CategoryJobs";
+}
+
+@{
+    Layout = "~/Views/Shared/_LayoutNoLogin.cshtml";
+}
+
+@if (User.IsInRole("User"))
+{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<center>
+    <br />
+    <br />
+    <h2>@ViewBag.Category</h2>
+    <br />
+    <div class="w3-responsive">
+        <table class="w3-table-all w3-hoverable">
+            <thead>
+                <tr class="w3-grey">
+                    <th>
+                        Company
+                    </th>
+                    <th>
+                        Rating
+                    </th>
+                    <th>
+                        Message
+                    </th>
+                </tr>
+            </thead>
+            @foreach (var item in Model)
+            {
+                <tr class="w3-hover-black w3-cyan">
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CompanyName)
+                    </td>
+                    <td>
+                        <div>@item.Rating</div>
+                    </td>
+                    <td>
+                        @if (User.IsInRole("User"))
+                        {
+
+                            <a href="#" class="applozic-launcher" data-mck-id="@item.techAspnetId" data-mck-name="@item.techAspnetId"><img src="~/Content/Images/message.png" height="40px" width="40px" /></a>
+                        }
+                        else if (!User.IsInRole("User"))
+                        {
+                            <p>Please sign in to message</p>
+                        }
+                    </td>
+                </tr>
+            }
+        </table>
+    </div>
+</center>
+

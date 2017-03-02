@@ -1,0 +1,208 @@
+﻿@model FindAFixMVC.Models.ViewModels.JobViewModel
+
+@{
+    ViewBag.Title = "Make Job";
+}
+<center>
+    <br />
+    <br />
+    <h2>Make Job</h2>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCltr_4hTmLvdTVWEuQ97mMZ6mTB_4YLCA&callback=myMap&libraries=places" async defer></script>
+
+    @* Get the messsage set by the create post method to know which statement to display *@
+    @if (ViewBag.error == "empty")
+    {
+        <div style="color:#cb4335">Please fill in all fields</div>
+    }
+    else if (ViewBag.error == "location")
+    {
+        <div style="color:#cb4335">Please choose a location for you job</div>
+    }
+
+    @using (Html.BeginForm()) 
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-horizontal">
+        
+            <div class="w3-label w3-text-blue" style="font-weight:bold">
+                @Html.Label("Job Title", new { @class = "control-label" })
+            </div>
+            <div style="padding-bottom:10px"></div>
+            <div>
+                @Html.TextBoxFor(model => Model.JobTitle, new { @style = "width:300px; border-style:solid; border-width:3px", @class = "w3-border-indigo w3-light-gray" })
+            </div>
+
+            <div class="w3-label w3-text-blue" style="font-weight:bold">
+                @Html.Label("Job Type", new { @class = "control-label" })
+            </div>
+            <div style="padding-bottom:10px"></div>
+            <div>
+                @{
+                    List<SelectListItem> listItems = new List<SelectListItem>();
+                    listItems.Add(new SelectListItem
+                    {
+                        Text = "Basement Finishing",
+                        Value = "Basement Finishing"
+                    });
+                    listItems.Add(new SelectListItem
+                    {
+                        Text = "Fencing",
+                        Value = "Fencing",
+                        Selected = true
+                    });
+                    listItems.Add(new SelectListItem
+                    {
+                        Text = "Floors and Walls",
+                        Value = "Floors and Walls"
+                    });
+                    listItems.Add(new SelectListItem
+                    {
+                        Text = "Gardening",
+                        Value = "Gardening"
+                    });
+                    listItems.Add(new SelectListItem
+                    {
+                        Text = "Plumbing",
+                        Value = "Plumbing"
+                    });
+                    listItems.Add(new SelectListItem
+                    {
+                        Text = "Windows",
+                        Value = "Windows"
+                    });
+                }
+
+                @Html.DropDownListFor(model => Model.JobType, listItems, "-- Select Category --", new { @style = "width:300px; border-style:solid; border-width:3px", @class = "w3-border-indigo w3-light-gray" })
+            </div>
+
+            <div class="w3-label w3-text-blue" style="font-weight:bold">
+                @Html.Label("Description", new { @class = "control-label" })
+            </div>
+            <div style="padding-bottom:10px"></div>
+            <div>
+                @Html.TextAreaFor(model => Model.JobDecription, new { @style = "width:300px; height:200px; border-style:solid; border-width:3px", @class = "w3-border-indigo w3-light-gray" })
+            </div>
+            <div>@Html.HiddenFor(model => model.Latitude, new { id = "Latitude" })</div>
+            <div>@Html.HiddenFor(model => model.Longitude, new { id = "Longitude" })</div>
+            <div style="padding-bottom:10px"></div>
+            <script>
+                function myMap() {
+
+                    var myLatLng = { lat: 43.6535, lng: -79.3832 };
+                    //var txtLat = parseInt(document.getElementById("lat").value);
+                    //var txtLng = parseInt(document.getElementById("lng").value);
+        
+                var map = new google.maps.Map(document.getElementById('myMap'), {
+                    center: myLatLng,
+                    zoom: 10
+                });
+
+                map.addListener('click', function(e){
+                    placeMarkerAndPanTo(e.latLng, map);
+                });
+
+
+                var marker = new google.maps.Marker({
+                    map: map,
+                    position: myLatLng
+                });
+
+
+                var infoWindow = new google.maps.InfoWindow({ map: map });
+
+                    //HTML5 GeoLocation(Locating Position)
+                if (navigator.geolocation) {
+                    navigator.geolocation.getCurrentPosition(function (position) {
+
+                        var pos = {
+                            lat: position.coords.latitude,
+                            lng: position.coords.longitude
+                        };
+
+                        infoWindow.setPosition(pos);
+                        infoWindow.setContent('Your Location');
+                        map.setCenter(pos);
+                    }, function () {
+                        handleLocationError(true, infoWindow, map.getCenter());
+                    });
+                } else {
+                    //Browser does not support Geolocation
+                    handleLocationError(false, infoWindow, map.getCenter());
+                }
+
+
+                    //Alerts the latitude and longitude coordinates
+                google.maps.event.addListener(map, 'click', function (event) {
+                    var lat = event.latLng.lat();
+                    var long = event.latLng.lng();
+                    var txtLat = document.getElementById("Latitude").value;
+                    var txtLng = document.getElementById("Latitude").value;
+                    txtLat = lat;
+                    txtLng = long;
+
+                    alert("Latitude: " + lat + ", Longitude: " + long);
+                    document.getElementById("Latitude").value = lat;
+                    document.getElementById("Longitude").value = long;
+                });
+
+                var searchBox = new google.maps.places.SearchBox(document.getElementById('mapSearch'));
+                //Search addresses
+                google.maps.event.addListener(searchBox, 'places_changed', function(){
+                    var places = searchBox.getPlaces();
+
+                    var bounds = new google.maps.LatLngBounds();
+
+                    var i, place;
+
+                    for(i=0; place=places[i];i++){
+
+                        console.log(place.geometry.location);
+
+                        bounds.extend(place.geometry.location);
+
+                        marker.setPosition(place.geometry.location); //set the marker to a new position
+                    }
+                    map.fitBounds(bounds); //fit to the bound
+                    map.setZoom(15);
+                 });
+            }
+
+            function placeMarkerAndPanTo(latLng, map){
+                var marker = new google.maps.Marker({
+                    position: latLng,
+                    map: map
+                });
+                map.panTo(latLng);
+            }
+
+
+            function handleLocationError(browserHasGeoLocation, infoWindow, pos){
+                infoWindow.setPosition(pos);
+                infoWindow.setContent(browserHasGeoLocation ?
+               'Error: The Geolocation service failed.' :
+               'Error: Your browser does not support Geolocation.');
+            }
+            </script>
+
+
+            <div id="myMap" style="width:50%; height:200px; border-style:solid; border-width:3px" class="w3-border-indigo"></div>
+            <div>@Html.HiddenFor(model => model.Latitude, new { id = "Latitude" })</div>
+            <div>@Html.HiddenFor(model => model.Longitude, new { id = "Longitude" })</div>
+            <div style="padding-bottom:10px"></div>
+            <div class="form-group">
+                <div>
+                    <input type="submit" value="Create" class="w3-btn w3-hover-blue" style="width:100px" />
+                </div>
+            </div>
+        </div>
+    }
+
+    <div style="text-decoration:underline; text-decoration-color:navy">
+        @Html.ActionLink("Back to List", "Index")
+    </div>
+</center>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

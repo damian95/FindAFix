@@ -1,0 +1,47 @@
+﻿@using Microsoft.AspNet.Identity
+@using FindAFixMVC.Models
+@using FindAFixMVC.Models.DBContext
+@if (Request.IsAuthenticated)
+{
+    using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm", @class = "navbar-right" }))
+    {
+        @Html.AntiForgeryToken()
+
+
+        <li class="w3-hide-small w3-dropdown-hover w3-hide-medium w3-hover-grey">
+            <a class="w3-hover-grey w3-padding-large" href="#">Hello @User.Identity.GetUserName() ! <i class="fa fa-caret-down"></i></a>            
+            <div class="w3-dropdown-content w3-indigo w3-card-4">
+                @if (User.IsInRole("Technician"))
+                {
+
+                
+                    using (var db = new ApplicationDbContext())
+                    {
+                        var uid = User.Identity.GetUserId();
+                        var techid = (from Technician in db.Technicians
+                                      where Technician.ApplicationUser_Id == uid
+                                      select Technician.Id).FirstOrDefault();
+
+                        var profileId = (from TechnicianProfile in db.TechnicianProfiles
+                                         where TechnicianProfile.techId == techid
+                                         select TechnicianProfile.Id).FirstOrDefault();
+
+                        @Html.ActionLink("Edit Profile", "TechnicianProfileEdit", "Account", new { @id = profileId }, null)
+                    }
+                }
+                @Html.ActionLink("Manage", "Index", "Manage", routeValues: null, htmlAttributes: new { title = "Manage" })
+            </div>
+        </li>
+        <li class="w3-hide-small w3-hide-medium w3-hover-grey"><a href="javascript:document.getElementById('logoutForm').submit()">Log off</a></li>
+
+
+    }
+}
+else
+{
+
+    <li class="w3-hide-small w3-hide-medium w3-hover-grey">@Html.ActionLink("User Register", "UserRegister", "Account", routeValues: null, htmlAttributes: new { id = "registerLink" })</li>
+    <li class="w3-hide-small w3-hide-medium w3-hover-grey">@Html.ActionLink("Technician Register", "TechnicianRegister", "Account", routeValues: null, htmlAttributes: new { id = "registerLink" })</li>
+    <li class="w3-hide-small w3-hide-medium w3-hover-grey">@Html.ActionLink("Log in", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })</li>
+    
+}

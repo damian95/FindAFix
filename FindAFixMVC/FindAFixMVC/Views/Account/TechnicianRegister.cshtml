@@ -1,0 +1,147 @@
+﻿@model FindAFixMVC.Models.TechnicianRegisterViewModel
+
+@{
+    ViewBag.Title = "Technician Register";
+}
+
+@{
+    Layout = "~/Views/Shared/_LayoutNoLogin.cshtml";
+}
+<center>
+    <br />
+    <br />
+    <h2>Technician Register</h2>
+
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+        <br />
+        <div class="form-horizontal">
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            <div class="form-group">
+                <div class="w3-label w3-text-blue" style="font-weight:bold">
+                    @Html.LabelFor(model => model.Email, htmlAttributes: new { @class = "control-label" })
+                </div>
+                <div style="padding-bottom:10px"></div>
+                <div>
+                    @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @style = "width:300px; border-style:solid; border-width:3px", @class = "w3-border-indigo w3-light-gray" } })
+                    @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="w3-label w3-text-blue" style="font-weight:bold">
+                    @Html.LabelFor(model => model.Password, htmlAttributes: new { @class = "control-label" })
+                </div>
+                <div style="padding-bottom:10px"></div>
+                <div>
+                    @Html.EditorFor(model => model.Password, new { htmlAttributes = new { @style = "width:300px; border-style:solid; border-width:3px", @class = "w3-border-indigo w3-light-gray" } })
+                    @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="w3-label w3-text-blue" style="font-weight:bold">
+                    @Html.LabelFor(model => model.ConfirmPassword, htmlAttributes: new { @class = "control-label" })
+                </div>
+                <div style="padding-bottom:10px"></div>
+                <div>
+                    @Html.EditorFor(model => model.ConfirmPassword, new { htmlAttributes = new { @style = "width:300px; border-style:solid; border-width:3px", @class = "w3-border-indigo w3-light-gray" } })
+                    @Html.ValidationMessageFor(model => model.ConfirmPassword, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="w3-label w3-text-blue" style="font-weight:bold">
+                    Company Name
+                </div>
+                <div style="padding-bottom:10px"></div>
+                <div>
+                    @Html.EditorFor(model => model.CompanyName, new { htmlAttributes = new { @style = "width:300px; border-style:solid; border-width:3px", @class = "w3-border-indigo w3-light-gray" } })
+                    @Html.ValidationMessageFor(model => model.CompanyName, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="w3-label w3-text-blue" style="font-weight:bold">
+                    CEO First Name
+                </div>
+                <div style="padding-bottom:10px"></div>
+                <div>
+                    @Html.EditorFor(model => model.CEOFirstName, new { htmlAttributes = new { @style = "width:300px; border-style:solid; border-width:3px", @class = "w3-border-indigo w3-light-gray" } })
+                    @Html.ValidationMessageFor(model => model.CEOFirstName, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="w3-label w3-text-blue" style="font-weight:bold">
+                    CEO Last Name
+                </div>
+                <div style="padding-bottom:10px"></div>
+                <div>
+                    @Html.EditorFor(model => model.CEOLastName, new { htmlAttributes = new { @style = "width:300px; border-style:solid; border-width:3px", @class = "w3-border-indigo w3-light-gray" } })
+                    @Html.ValidationMessageFor(model => model.CEOLastName, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="w3-label w3-text-blue" style="font-weight:bold">
+                    Job Type
+                </div>
+                <div style="padding-bottom:10px"></div>
+                <div>
+
+                    @{
+                        List<SelectListItem> listItems = new List<SelectListItem>();
+                        listItems.Add(new SelectListItem
+                        {
+                            Text = "Basement Finishing",
+                            Value = "Basement Finishing"
+                        });
+                        listItems.Add(new SelectListItem
+                        {
+                            Text = "Fencing",
+                            Value = "Fencing",
+                            Selected = true
+                        });
+                        listItems.Add(new SelectListItem
+                        {
+                            Text = "Floors and Walls",
+                            Value = "Floors and Walls"
+                        });
+                        listItems.Add(new SelectListItem
+                        {
+                            Text = "Gardening",
+                            Value = "Gardening"
+                        });
+                        listItems.Add(new SelectListItem
+                        {
+                            Text = "Plumbing",
+                            Value = "Plumbing"
+                        });
+                        listItems.Add(new SelectListItem
+                        {
+                            Text = "Windows",
+                            Value = "Windows"
+                        });
+                    }
+
+                    @Html.DropDownListFor(model => model.JobType, listItems, "-- Select Category --", new { @style = "width:300px; border-style:solid; border-width:3px", @class = "w3-border-indigo w3-light-gray" })
+
+                    @Html.ValidationMessageFor(model => model.JobType, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <div style="padding-bottom:10px"></div>
+            <div class="form-group">
+                <div>
+                    <input type="submit" value="Register" class="w3-btn w3-hover-blue" style="width:100px" />
+                </div>
+            </div>
+        </div>
+    }
+
+</center>
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

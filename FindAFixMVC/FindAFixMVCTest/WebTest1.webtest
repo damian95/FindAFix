@@ -1,0 +1,1087 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebTest Name="WebTest1" Id="87553eed-792d-4fb8-85c0-4abf82428539" Owner="" Priority="2147483647" Enabled="True" CssProjectStructure="" CssIteration="" Timeout="0" WorkItemIds="" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010" Description="" CredentialUserName="" CredentialPassword="" PreAuthenticate="True" Proxy="default" StopOnError="False" RecordedResultFile="WebTest1.63e07ae7-3406-478b-841d-5410a67acd03.rec.webtestresult" ResultsLocale="">
+  <Items>
+    <Request Method="GET" Guid="2dceef9a-e4f6-4f8f-8895-012191dd07f7" Version="1.1" Url="http://localhost:2564/" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <DependentRequests>
+        <Request Method="GET" Guid="3cf6f2e3-e044-4d6a-a2b4-bb9bdb2e88cf" Version="1.1" Url="https://fonts.gstatic.com/s/lato/v11/9k-RPmcnxYEPm8CNFsH2gg.woff" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Referer" Value="http://localhost:2564/" />
+          </Headers>
+        </Request>
+        <Request Method="GET" Guid="bc624032-1d87-4261-aa8d-a1314874e525" Version="1.1" Url="https://fonts.gstatic.com/s/montserrat/v7/zhcz-_WihjSQC0oHJ9TCYBsxEYwM7FgeyaSgU71cLG0.woff" ThinkTime="7" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Referer" Value="http://localhost:2564/" />
+          </Headers>
+        </Request>
+        <Request Method="GET" Guid="d089985f-f9b5-4d95-94ab-bd07d34fb111" Version="1.1" Url="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/fonts/fontawesome-webfont.eot" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Referer" Value="http://localhost:2564/" />
+          </Headers>
+          <QueryStringParameters>
+            <QueryStringParameter Name="" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+          </QueryStringParameters>
+        </Request>
+      </DependentRequests>
+    </Request>
+    <Request Method="POST" Guid="bc678923-42ea-440e-8855-d6f169482abf" Version="1.1" Url="http://localhost:40161/46bfb18f2cd1469181aac36573fad9bb/browserLinkSignalR/negotiate" ThinkTime="36" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Content-Type" Value="application/x-www-form-urlencoded; charset=UTF-8" />
+        <Header Name="Accept" Value="text/plain, */*; q=0.01" />
+        <Header Name="Referer" Value="http://localhost:2564/" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="requestUrl" Value="http%3A%2F%2Flocalhost%3A2564%2F" RecordedValue="http%3A%2F%2Flocalhost%3A2564%2F" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="browserName" Value="Internet+Explorer" RecordedValue="Internet+Explorer" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="userAgent" Value="Mozilla%2F5.0+(Windows+NT+10.0%3B+WOW64%3B+Trident%2F7.0%3B+.NET4.0C%3B+.NET4.0E%3B+.NET+CLR+2.0.50727%3B+.NET+CLR+3.0.30729%3B+.NET+CLR+3.5.30729%3B+.NET+CLR+1.1.4322%3B+LCTE%3B+rv%3A11.0)+like+Gecko" RecordedValue="Mozilla%2F5.0+(Windows+NT+10.0%3B+WOW64%3B+Trident%2F7.0%3B+.NET4.0C%3B+.NET4.0E%3B+.NET+CLR+2.0.50727%3B+.NET+CLR+3.0.30729%3B+.NET+CLR+3.5.30729%3B+.NET+CLR+1.1.4322%3B+LCTE%3B+rv%3A11.0)+like+Gecko" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="clientProtocol" Value="1.3" RecordedValue="1.3" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="_" Value="1481939584630" RecordedValue="1481939584630" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+      <FormPostHttpBody />
+    </Request>
+    <Request Method="GET" Guid="58c3dd5a-7c72-4bf3-a744-b9f882766b68" Version="1.1" Url="http://localhost:2564/Account/Login" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <DependentRequests>
+        <Request Method="GET" Guid="af8ea1c5-b5a8-41c5-948a-67d5ee10eeb5" Version="1.1" Url="https://fonts.gstatic.com/s/lato/v11/9k-RPmcnxYEPm8CNFsH2gg.woff" ThinkTime="8" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Referer" Value="http://localhost:2564/Account/Login" />
+          </Headers>
+        </Request>
+        <Request Method="GET" Guid="48f9a45f-a7db-48ac-b277-09ba38514694" Version="1.1" Url="https://fonts.gstatic.com/s/montserrat/v7/zhcz-_WihjSQC0oHJ9TCYBsxEYwM7FgeyaSgU71cLG0.woff" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Referer" Value="http://localhost:2564/Account/Login" />
+          </Headers>
+        </Request>
+        <Request Method="GET" Guid="6e30c1b6-0728-4d15-ae1c-1dad36535527" Version="1.1" Url="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/fonts/fontawesome-webfont.eot" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Referer" Value="http://localhost:2564/Account/Login" />
+          </Headers>
+          <QueryStringParameters>
+            <QueryStringParameter Name="" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+          </QueryStringParameters>
+        </Request>
+      </DependentRequests>
+      <Headers>
+        <Header Name="Referer" Value="http://localhost:2564/" />
+      </Headers>
+      <ExtractionRules>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractHiddenFields, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="1" DisplayName="Extract Hidden Fields" Description="Extract all hidden fields from the response and place them into the test context.">
+          <RuleParameters>
+            <RuleParameter Name="Required" Value="True" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+          </RuleParameters>
+        </ExtractionRule>
+      </ExtractionRules>
+    </Request>
+    <Request Method="GET" Guid="5656cdd5-46ed-4a63-8ee0-1128677132e5" Version="1.1" Url="http://localhost:40161/46bfb18f2cd1469181aac36573fad9bb/browserLinkSignalR/connect" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <QueryStringParameters>
+        <QueryStringParameter Name="transport" Value="webSockets" RecordedValue="webSockets" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="connectionToken" Value="AQAAANCMnd8BFdERjHoAwE%2FCl%2BsBAAAAxcqHhV%2Fpq0CSttprBLs%2BzgAAAAACAAAAAAAQZgAAAAEAACAAAADiHDVCs6QA9z8j2dqHeujxn%2BCQsMiNIbtfxXYa9PVWLQAAAAAOgAAAAAIAACAAAABEdmPSKeSQD2b50WPGKaCyZGxppoEhlgstfeJS0LdFRjAAAAAUSVQ2ug4d98sKurYk7d6WFW%2FebCi%2BcR%2FKYLdkcppkBgYTF2iaUzYINyAUAMpWTjlAAAAAWVpHcqNEGkLvuD2gKSNb4Da7pV3jizf4XIDMUoyOQwEOmCWKjEMaxBG0txuxW5gNpUhCOEnx4qldgyEJ9KCyrA%3D%3D" RecordedValue="AQAAANCMnd8BFdERjHoAwE%2FCl%2BsBAAAAxcqHhV%2Fpq0CSttprBLs%2BzgAAAAACAAAAAAAQZgAAAAEAACAAAADiHDVCs6QA9z8j2dqHeujxn%2BCQsMiNIbtfxXYa9PVWLQAAAAAOgAAAAAIAACAAAABEdmPSKeSQD2b50WPGKaCyZGxppoEhlgstfeJS0LdFRjAAAAAUSVQ2ug4d98sKurYk7d6WFW%2FebCi%2BcR%2FKYLdkcppkBgYTF2iaUzYINyAUAMpWTjlAAAAAWVpHcqNEGkLvuD2gKSNb4Da7pV3jizf4XIDMUoyOQwEOmCWKjEMaxBG0txuxW5gNpUhCOEnx4qldgyEJ9KCyrA%3D%3D" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="requestUrl" Value="http%3A%2F%2Flocalhost%3A2564%2F" RecordedValue="http%3A%2F%2Flocalhost%3A2564%2F" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="browserName" Value="Internet+Explorer" RecordedValue="Internet+Explorer" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="userAgent" Value="Mozilla%2F5.0+(Windows+NT+10.0%3B+WOW64%3B+Trident%2F7.0%3B+.NET4.0C%3B+.NET4.0E%3B+.NET+CLR+2.0.50727%3B+.NET+CLR+3.0.30729%3B+.NET+CLR+3.5.30729%3B+.NET+CLR+1.1.4322%3B+LCTE%3B+rv%3A11.0)+like+Gecko" RecordedValue="Mozilla%2F5.0+(Windows+NT+10.0%3B+WOW64%3B+Trident%2F7.0%3B+.NET4.0C%3B+.NET4.0E%3B+.NET+CLR+2.0.50727%3B+.NET+CLR+3.0.30729%3B+.NET+CLR+3.5.30729%3B+.NET+CLR+1.1.4322%3B+LCTE%3B+rv%3A11.0)+like+Gecko" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="tid" Value="6" RecordedValue="6" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="9de115cd-8585-451d-9fee-01a3cda5a5bf" Version="1.1" Url="http://localhost:2564/__browserLink/requestData/9fb06307a9a44a50b7d1f10c594b4b5c" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Accept" Value="application/json, text/javascript, */*; q=0.01" />
+        <Header Name="X-Requested-With" Value="XMLHttpRequest" />
+        <Header Name="Referer" Value="http://localhost:2564/" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="version" Value="2" RecordedValue="2" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="POST" Guid="2a8746a5-79f4-45ef-b2f1-479834fcf31d" Version="1.1" Url="http://localhost:40161/46bfb18f2cd1469181aac36573fad9bb/browserLinkSignalR/abort" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Accept" Value="text/plain, */*; q=0.01" />
+        <Header Name="Referer" Value="http://localhost:2564/" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="transport" Value="webSockets" RecordedValue="webSockets" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="connectionToken" Value="AQAAANCMnd8BFdERjHoAwE%2FCl%2BsBAAAAxcqHhV%2Fpq0CSttprBLs%2BzgAAAAACAAAAAAAQZgAAAAEAACAAAADiHDVCs6QA9z8j2dqHeujxn%2BCQsMiNIbtfxXYa9PVWLQAAAAAOgAAAAAIAACAAAABEdmPSKeSQD2b50WPGKaCyZGxppoEhlgstfeJS0LdFRjAAAAAUSVQ2ug4d98sKurYk7d6WFW%2FebCi%2BcR%2FKYLdkcppkBgYTF2iaUzYINyAUAMpWTjlAAAAAWVpHcqNEGkLvuD2gKSNb4Da7pV3jizf4XIDMUoyOQwEOmCWKjEMaxBG0txuxW5gNpUhCOEnx4qldgyEJ9KCyrA%3D%3D" RecordedValue="AQAAANCMnd8BFdERjHoAwE%2FCl%2BsBAAAAxcqHhV%2Fpq0CSttprBLs%2BzgAAAAACAAAAAAAQZgAAAAEAACAAAADiHDVCs6QA9z8j2dqHeujxn%2BCQsMiNIbtfxXYa9PVWLQAAAAAOgAAAAAIAACAAAABEdmPSKeSQD2b50WPGKaCyZGxppoEhlgstfeJS0LdFRjAAAAAUSVQ2ug4d98sKurYk7d6WFW%2FebCi%2BcR%2FKYLdkcppkBgYTF2iaUzYINyAUAMpWTjlAAAAAWVpHcqNEGkLvuD2gKSNb4Da7pV3jizf4XIDMUoyOQwEOmCWKjEMaxBG0txuxW5gNpUhCOEnx4qldgyEJ9KCyrA%3D%3D" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="requestUrl" Value="http%3A%2F%2Flocalhost%3A2564%2F" RecordedValue="http%3A%2F%2Flocalhost%3A2564%2F" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="browserName" Value="Internet+Explorer" RecordedValue="Internet+Explorer" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="userAgent" Value="Mozilla%2F5.0+(Windows+NT+10.0%3B+WOW64%3B+Trident%2F7.0%3B+.NET4.0C%3B+.NET4.0E%3B+.NET+CLR+2.0.50727%3B+.NET+CLR+3.0.30729%3B+.NET+CLR+3.5.30729%3B+.NET+CLR+1.1.4322%3B+LCTE%3B+rv%3A11.0)+like+Gecko" RecordedValue="Mozilla%2F5.0+(Windows+NT+10.0%3B+WOW64%3B+Trident%2F7.0%3B+.NET4.0C%3B+.NET4.0E%3B+.NET+CLR+2.0.50727%3B+.NET+CLR+3.0.30729%3B+.NET+CLR+3.5.30729%3B+.NET+CLR+1.1.4322%3B+LCTE%3B+rv%3A11.0)+like+Gecko" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+      <FormPostHttpBody />
+    </Request>
+    <Request Method="POST" Guid="0e5c4d11-7d99-4a69-b8e2-e1c45121bf30" Version="1.1" Url="http://localhost:40161/46bfb18f2cd1469181aac36573fad9bb/browserLinkSignalR/negotiate" ThinkTime="13" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Content-Type" Value="application/x-www-form-urlencoded; charset=UTF-8" />
+        <Header Name="Accept" Value="text/plain, */*; q=0.01" />
+        <Header Name="Referer" Value="http://localhost:2564/Account/Login" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="requestUrl" Value="http%3A%2F%2Flocalhost%3A2564%2FAccount%2FLogin" RecordedValue="http%3A%2F%2Flocalhost%3A2564%2FAccount%2FLogin" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="browserName" Value="Internet+Explorer" RecordedValue="Internet+Explorer" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="userAgent" Value="Mozilla%2F5.0+(Windows+NT+10.0%3B+WOW64%3B+Trident%2F7.0%3B+.NET4.0C%3B+.NET4.0E%3B+.NET+CLR+2.0.50727%3B+.NET+CLR+3.0.30729%3B+.NET+CLR+3.5.30729%3B+.NET+CLR+1.1.4322%3B+LCTE%3B+rv%3A11.0)+like+Gecko" RecordedValue="Mozilla%2F5.0+(Windows+NT+10.0%3B+WOW64%3B+Trident%2F7.0%3B+.NET4.0C%3B+.NET4.0E%3B+.NET+CLR+2.0.50727%3B+.NET+CLR+3.0.30729%3B+.NET+CLR+3.5.30729%3B+.NET+CLR+1.1.4322%3B+LCTE%3B+rv%3A11.0)+like+Gecko" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="clientProtocol" Value="1.3" RecordedValue="1.3" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="_" Value="1481939632176" RecordedValue="1481939632176" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+      <FormPostHttpBody />
+    </Request>
+    <Request Method="POST" Guid="98fa8e0d-0ef6-48c4-b9e3-d7edab1f186b" Version="1.1" Url="http://localhost:2564/Account/Login" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="http://localhost:2564/Home/UserHome" ReportingName="" IgnoreHttpStatusCode="False">
+      <DependentRequests>
+        <Request Method="GET" Guid="298ee57d-73aa-4bbd-87fe-bf63d0a599b3" Version="1.1" Url="https://apps.applozic.com/sidebox.app" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Referer" Value="http://localhost:2564/Home/UserHome" />
+          </Headers>
+        </Request>
+        <Request Method="GET" Guid="9cb38a16-085f-4125-988e-800ea9b27056" Version="1.1" Url="https://fonts.gstatic.com/s/lato/v11/9k-RPmcnxYEPm8CNFsH2gg.woff" ThinkTime="2" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Referer" Value="http://localhost:2564/Home/UserHome" />
+          </Headers>
+        </Request>
+        <Request Method="GET" Guid="404d8d2c-e4f8-40c9-bc78-a0602a2767a4" Version="1.1" Url="https://fonts.gstatic.com/s/montserrat/v7/zhcz-_WihjSQC0oHJ9TCYBsxEYwM7FgeyaSgU71cLG0.woff" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Referer" Value="http://localhost:2564/Home/UserHome" />
+          </Headers>
+        </Request>
+        <Request Method="GET" Guid="078a40f5-185d-4404-b93d-cbc982d65078" Version="1.1" Url="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/fonts/fontawesome-webfont.eot" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Referer" Value="http://localhost:2564/Home/UserHome" />
+          </Headers>
+          <QueryStringParameters>
+            <QueryStringParameter Name="" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+          </QueryStringParameters>
+        </Request>
+        <Request Method="GET" Guid="9978c609-9436-46c3-85c1-332584259519" Version="1.1" Url="https://apps.applozic.com/resources/1608/sidebox/template/mck-sidebox.html" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Accept" Value="*/*" />
+            <Header Name="Referer" Value="http://localhost:2564/Home/UserHome" />
+          </Headers>
+        </Request>
+        <Request Method="GET" Guid="775f6f3a-1ec3-4a6a-be2f-60e119b748ce" Version="1.1" Url="https://maps.google.com/maps/api/js" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Referer" Value="http://localhost:2564/Home/UserHome" />
+          </Headers>
+          <QueryStringParameters>
+            <QueryStringParameter Name="libraries" Value="places" RecordedValue="places" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="key" Value="AIzaSyDKfWHzu9X7Z2hByeW4RRFJrD9SizOzZt4" RecordedValue="AIzaSyDKfWHzu9X7Z2hByeW4RRFJrD9SizOzZt4" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+          </QueryStringParameters>
+        </Request>
+        <Request Method="GET" Guid="656c59d9-6b07-488a-a095-3be5e80d4c4f" Version="1.1" Url="https://csi.gstatic.com/csi" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Referer" Value="http://localhost:2564/Home/UserHome" />
+          </Headers>
+          <QueryStringParameters>
+            <QueryStringParameter Name="v" Value="2" RecordedValue="2" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="s" Value="mapsapi3" RecordedValue="mapsapi3" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="v3v" Value="27.5" RecordedValue="27.5" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="action" Value="apiboot2" RecordedValue="apiboot2" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="libraries" Value="places" RecordedValue="places" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="e" Value="10_1_0,10_2_0" RecordedValue="10_1_0,10_2_0" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="rt" Value="main.6" RecordedValue="main.6" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+          </QueryStringParameters>
+        </Request>
+        <Request Method="OPTIONS" Guid="2468d3b8-88e0-4cfe-a168-2c58967da2dc" Version="1.1" Url="https://apps.applozic.com/v2/tab/initialize.page" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <StringHttpBody ContentType="" InsertByteOrderMark="False">
+          </StringHttpBody>
+        </Request>
+        <Request Method="OPTIONS" Guid="306e85fc-7a75-4b70-8b5a-1d41ec863538" Version="1.1" Url="https://apps.applozic.com/rest/ws/message/list" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <StringHttpBody ContentType="" InsertByteOrderMark="False">
+          </StringHttpBody>
+        </Request>
+        <Request Method="OPTIONS" Guid="c5491685-cbbc-450b-ba6e-ba63aa37d567" Version="1.1" Url="https://apps.applozic.com/v2/tab/initialize.page" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Content-Type" Value="application/json" />
+            <Header Name="Accept" Value="*/*" />
+            <Header Name="Referer" Value="http://localhost:2564/Home/UserHome" />
+          </Headers>
+          <StringHttpBody ContentType="application/json" InsertByteOrderMark="False">
+          </StringHttpBody>
+        </Request>
+        <Request Method="OPTIONS" Guid="3a36ab24-2199-4919-8555-a8de82963e21" Version="1.1" Url="https://apps.applozic.com/rest/ws/message/list" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Content-Type" Value="application/json" />
+            <Header Name="Accept" Value="*/*" />
+            <Header Name="Referer" Value="http://localhost:2564/Home/UserHome" />
+          </Headers>
+          <StringHttpBody ContentType="application/json" InsertByteOrderMark="False">
+          </StringHttpBody>
+        </Request>
+        <Request Method="POST" Guid="0b4cc5a6-fffd-4f93-96bf-8084c5c52dcf" Version="1.1" Url="https://apps.applozic.com/v2/tab/initialize.page" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Accept" Value="*/*" />
+            <Header Name="Referer" Value="http://localhost:2564/Home/UserHome" />
+          </Headers>
+          <StringHttpBody ContentType="application/json" InsertByteOrderMark="False">ewAiAGEAcABwAGwAaQBjAGEAdABpAG8AbgBJAGQAIgA6ACIAMgAyADIAZQBhADAANABmADIAOABjADgANgA2AGQAMgA2AGIAZgBmADYAMgAzAGIAMgBhAGUANAA3ADYANgA1AGMAIgAsACIAdQBzAGUAcgBJAGQAIgA6ACIAZgBjAGYANgBmADIANQA4AC0AMgA1ADgANAAtADQAZgBlADkALQA5ADIAZgAzAC0AMgBiADEANwBjAGIAYgBjADcAOAA4ADUAIgAsACIAZABpAHMAcABsAGEAeQBOAGEAbQBlACIAOgAiAG4AZQB3AHUAcwBlAHIAQAB0AGUAcwB0AC4AYwBvAG0AIgAsACIAZQBuAGEAYgBsAGUARQBuAGMAcgB5AHAAdABpAG8AbgAiADoAdAByAHUAZQAsACIAYQBwAHAAVgBlAHIAcwBpAG8AbgBDAG8AZABlACIAOgAxADAAOAAsACIAYQB1AHQAaABlAG4AdABpAGMAYQB0AGkAbwBuAFQAeQBwAGUASQBkACIAOgAwAH0A</StringHttpBody>
+        </Request>
+      </DependentRequests>
+      <Headers>
+        <Header Name="Referer" Value="http://localhost:2564/Account/Login" />
+      </Headers>
+      <FormPostHttpBody>
+        <FormPostParameter Name="__RequestVerificationToken" Value="{{$HIDDEN1.__RequestVerificationToken}}" RecordedValue="besiPkh5LeHlOq0XSI0AJP62TgFDcZWAKpq8MAtHDt61_oj1W43PrPALlK2uWp3uZ1jWlvBjBKQzp-Z1YoY_r524lRaCPViz80e4WVBDtUc1" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="Email" Value="newuser@test.com" RecordedValue="newuser@test.com" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="Password" Value="P@ssword1" RecordedValue="P@ssword1" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="RememberMe" Value="{{$HIDDEN1.RememberMe}}" RecordedValue="false" CorrelationBinding="" UrlEncode="True" />
+      </FormPostHttpBody>
+    </Request>
+    <Request Method="GET" Guid="7ea28a69-872a-434c-875d-5dd9388d5349" Version="1.1" Url="http://localhost:40161/46bfb18f2cd1469181aac36573fad9bb/browserLinkSignalR/connect" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <QueryStringParameters>
+        <QueryStringParameter Name="transport" Value="webSockets" RecordedValue="webSockets" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="connectionToken" Value="AQAAANCMnd8BFdERjHoAwE%2FCl%2BsBAAAAxcqHhV%2Fpq0CSttprBLs%2BzgAAAAACAAAAAAAQZgAAAAEAACAAAADvhYTrm%2BqUeQgphZnM40dZr8xB%2BLonyD9xpG751MFIGQAAAAAOgAAAAAIAACAAAADE1N8tAx0u23U%2FS0S%2B1wItHxiXcScy7gU7co2Aii8i%2BTAAAABslagH3bWSXhqGdXDOgd7twq7E%2BW2aDd9V45Lnrc0TTt77CIkTLcyulpNzoyMz679AAAAAKYA5t%2BV%2FDtZ7EkovRe3dDLwe%2FLBmEj2oS8FDyFo0JE0WyIFQu7jx25RjlufXSQbFAgsYLAxxtsop8KuWFCY%2BDw%3D%3D" RecordedValue="AQAAANCMnd8BFdERjHoAwE%2FCl%2BsBAAAAxcqHhV%2Fpq0CSttprBLs%2BzgAAAAACAAAAAAAQZgAAAAEAACAAAADvhYTrm%2BqUeQgphZnM40dZr8xB%2BLonyD9xpG751MFIGQAAAAAOgAAAAAIAACAAAADE1N8tAx0u23U%2FS0S%2B1wItHxiXcScy7gU7co2Aii8i%2BTAAAABslagH3bWSXhqGdXDOgd7twq7E%2BW2aDd9V45Lnrc0TTt77CIkTLcyulpNzoyMz679AAAAAKYA5t%2BV%2FDtZ7EkovRe3dDLwe%2FLBmEj2oS8FDyFo0JE0WyIFQu7jx25RjlufXSQbFAgsYLAxxtsop8KuWFCY%2BDw%3D%3D" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="requestUrl" Value="http%3A%2F%2Flocalhost%3A2564%2FAccount%2FLogin" RecordedValue="http%3A%2F%2Flocalhost%3A2564%2FAccount%2FLogin" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="browserName" Value="Internet+Explorer" RecordedValue="Internet+Explorer" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="userAgent" Value="Mozilla%2F5.0+(Windows+NT+10.0%3B+WOW64%3B+Trident%2F7.0%3B+.NET4.0C%3B+.NET4.0E%3B+.NET+CLR+2.0.50727%3B+.NET+CLR+3.0.30729%3B+.NET+CLR+3.5.30729%3B+.NET+CLR+1.1.4322%3B+LCTE%3B+rv%3A11.0)+like+Gecko" RecordedValue="Mozilla%2F5.0+(Windows+NT+10.0%3B+WOW64%3B+Trident%2F7.0%3B+.NET4.0C%3B+.NET4.0E%3B+.NET+CLR+2.0.50727%3B+.NET+CLR+3.0.30729%3B+.NET+CLR+3.5.30729%3B+.NET+CLR+1.1.4322%3B+LCTE%3B+rv%3A11.0)+like+Gecko" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="tid" Value="0" RecordedValue="0" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="21cd5a96-fda3-427e-a8ab-02ba2c80941b" Version="1.1" Url="http://localhost:2564/__browserLink/requestData/2097acde15544e9fa0934f99abcb33bf" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Accept" Value="application/json, text/javascript, */*; q=0.01" />
+        <Header Name="X-Requested-With" Value="XMLHttpRequest" />
+        <Header Name="Referer" Value="http://localhost:2564/Account/Login" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="version" Value="2" RecordedValue="2" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="POST" Guid="24e5cb23-4c5f-4f4a-9ddb-28c10028af1d" Version="1.1" Url="http://localhost:40161/46bfb18f2cd1469181aac36573fad9bb/browserLinkSignalR/abort" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Accept" Value="text/plain, */*; q=0.01" />
+        <Header Name="Referer" Value="http://localhost:2564/Account/Login" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="transport" Value="webSockets" RecordedValue="webSockets" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="connectionToken" Value="AQAAANCMnd8BFdERjHoAwE%2FCl%2BsBAAAAxcqHhV%2Fpq0CSttprBLs%2BzgAAAAACAAAAAAAQZgAAAAEAACAAAADvhYTrm%2BqUeQgphZnM40dZr8xB%2BLonyD9xpG751MFIGQAAAAAOgAAAAAIAACAAAADE1N8tAx0u23U%2FS0S%2B1wItHxiXcScy7gU7co2Aii8i%2BTAAAABslagH3bWSXhqGdXDOgd7twq7E%2BW2aDd9V45Lnrc0TTt77CIkTLcyulpNzoyMz679AAAAAKYA5t%2BV%2FDtZ7EkovRe3dDLwe%2FLBmEj2oS8FDyFo0JE0WyIFQu7jx25RjlufXSQbFAgsYLAxxtsop8KuWFCY%2BDw%3D%3D" RecordedValue="AQAAANCMnd8BFdERjHoAwE%2FCl%2BsBAAAAxcqHhV%2Fpq0CSttprBLs%2BzgAAAAACAAAAAAAQZgAAAAEAACAAAADvhYTrm%2BqUeQgphZnM40dZr8xB%2BLonyD9xpG751MFIGQAAAAAOgAAAAAIAACAAAADE1N8tAx0u23U%2FS0S%2B1wItHxiXcScy7gU7co2Aii8i%2BTAAAABslagH3bWSXhqGdXDOgd7twq7E%2BW2aDd9V45Lnrc0TTt77CIkTLcyulpNzoyMz679AAAAAKYA5t%2BV%2FDtZ7EkovRe3dDLwe%2FLBmEj2oS8FDyFo0JE0WyIFQu7jx25RjlufXSQbFAgsYLAxxtsop8KuWFCY%2BDw%3D%3D" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="requestUrl" Value="http%3A%2F%2Flocalhost%3A2564%2FAccount%2FLogin" RecordedValue="http%3A%2F%2Flocalhost%3A2564%2FAccount%2FLogin" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="browserName" Value="Internet+Explorer" RecordedValue="Internet+Explorer" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="userAgent" Value="Mozilla%2F5.0+(Windows+NT+10.0%3B+WOW64%3B+Trident%2F7.0%3B+.NET4.0C%3B+.NET4.0E%3B+.NET+CLR+2.0.50727%3B+.NET+CLR+3.0.30729%3B+.NET+CLR+3.5.30729%3B+.NET+CLR+1.1.4322%3B+LCTE%3B+rv%3A11.0)+like+Gecko" RecordedValue="Mozilla%2F5.0+(Windows+NT+10.0%3B+WOW64%3B+Trident%2F7.0%3B+.NET4.0C%3B+.NET4.0E%3B+.NET+CLR+2.0.50727%3B+.NET+CLR+3.0.30729%3B+.NET+CLR+3.5.30729%3B+.NET+CLR+1.1.4322%3B+LCTE%3B+rv%3A11.0)+like+Gecko" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+      <FormPostHttpBody />
+    </Request>
+    <Request Method="POST" Guid="ddeb8dfe-de5c-4799-98bd-39a758c4a2dd" Version="1.1" Url="http://localhost:40161/46bfb18f2cd1469181aac36573fad9bb/browserLinkSignalR/negotiate" ThinkTime="10" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Content-Type" Value="application/x-www-form-urlencoded; charset=UTF-8" />
+        <Header Name="Accept" Value="text/plain, */*; q=0.01" />
+        <Header Name="Referer" Value="http://localhost:2564/Home/UserHome" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="requestUrl" Value="http%3A%2F%2Flocalhost%3A2564%2FHome%2FUserHome" RecordedValue="http%3A%2F%2Flocalhost%3A2564%2FHome%2FUserHome" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="browserName" Value="Internet+Explorer" RecordedValue="Internet+Explorer" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="userAgent" Value="Mozilla%2F5.0+(Windows+NT+10.0%3B+WOW64%3B+Trident%2F7.0%3B+.NET4.0C%3B+.NET4.0E%3B+.NET+CLR+2.0.50727%3B+.NET+CLR+3.0.30729%3B+.NET+CLR+3.5.30729%3B+.NET+CLR+1.1.4322%3B+LCTE%3B+rv%3A11.0)+like+Gecko" RecordedValue="Mozilla%2F5.0+(Windows+NT+10.0%3B+WOW64%3B+Trident%2F7.0%3B+.NET4.0C%3B+.NET4.0E%3B+.NET+CLR+2.0.50727%3B+.NET+CLR+3.0.30729%3B+.NET+CLR+3.5.30729%3B+.NET+CLR+1.1.4322%3B+LCTE%3B+rv%3A11.0)+like+Gecko" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="clientProtocol" Value="1.3" RecordedValue="1.3" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="_" Value="1481939653144" RecordedValue="1481939653144" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+      <FormPostHttpBody />
+    </Request>
+    <Request Method="GET" Guid="84f342c1-7b82-4dcf-8b8c-d6655572ff64" Version="1.1" Url="http://localhost:2564/Jobs/Create" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <DependentRequests>
+        <Request Method="GET" Guid="1916247d-87d2-431c-9033-8551d836894e" Version="1.1" Url="https://apps.applozic.com/sidebox.app" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Referer" Value="http://localhost:2564/Jobs/Create" />
+          </Headers>
+        </Request>
+        <Request Method="GET" Guid="8789506a-ba65-4bdd-9870-539abbb6a763" Version="1.1" Url="https://fonts.gstatic.com/s/lato/v11/9k-RPmcnxYEPm8CNFsH2gg.woff" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Referer" Value="http://localhost:2564/Jobs/Create" />
+          </Headers>
+        </Request>
+        <Request Method="GET" Guid="c5e6d030-6219-4cc0-b2db-b2d399288853" Version="1.1" Url="https://csi.gstatic.com/csi" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Referer" Value="http://localhost:2564/Jobs/Create" />
+          </Headers>
+          <QueryStringParameters>
+            <QueryStringParameter Name="v" Value="2" RecordedValue="2" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="s" Value="mapsapi3" RecordedValue="mapsapi3" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="v3v" Value="27.5" RecordedValue="27.5" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="action" Value="apiboot2" RecordedValue="apiboot2" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="libraries" Value="places" RecordedValue="places" CorrelationBinding="{{QueryStringParam228.libraries}}" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="e" Value="10_1_0,10_2_0" RecordedValue="10_1_0,10_2_0" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="rt" Value="main.6" RecordedValue="main.6" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+          </QueryStringParameters>
+        </Request>
+        <Request Method="GET" Guid="54d534ad-bbc8-46ec-b708-a53d47461cd3" Version="1.1" Url="https://csi.gstatic.com/csi" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Referer" Value="http://localhost:2564/Jobs/Create" />
+          </Headers>
+          <QueryStringParameters>
+            <QueryStringParameter Name="v" Value="2" RecordedValue="2" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="s" Value="mapsapi3" RecordedValue="mapsapi3" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="v3v" Value="27.5" RecordedValue="27.5" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="action" Value="apiboot2" RecordedValue="apiboot2" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="libraries" Value="places" RecordedValue="places" CorrelationBinding="{{QueryStringParam265.libraries}}" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="e" Value="10_1_0,10_2_0" RecordedValue="10_1_0,10_2_0" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="rt" Value="firstmap.10" RecordedValue="firstmap.10" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+          </QueryStringParameters>
+        </Request>
+        <Request Method="GET" Guid="a7b70dbc-8eac-4178-9eff-2665f6e145eb" Version="1.1" Url="https://fonts.gstatic.com/s/montserrat/v7/zhcz-_WihjSQC0oHJ9TCYBsxEYwM7FgeyaSgU71cLG0.woff" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Referer" Value="http://localhost:2564/Jobs/Create" />
+          </Headers>
+        </Request>
+        <Request Method="GET" Guid="2d4c4d22-2a0b-443e-be3c-7680e93f9a3b" Version="1.1" Url="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/fonts/fontawesome-webfont.eot" ThinkTime="8" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Referer" Value="http://localhost:2564/Jobs/Create" />
+          </Headers>
+          <QueryStringParameters>
+            <QueryStringParameter Name="" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+          </QueryStringParameters>
+        </Request>
+        <Request Method="GET" Guid="3736f8ab-6bf9-444b-9153-2079b9a9dab5" Version="1.1" Url="https://apps.applozic.com/resources/1608/sidebox/template/mck-sidebox.html" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Accept" Value="*/*" />
+            <Header Name="Referer" Value="http://localhost:2564/Jobs/Create" />
+          </Headers>
+        </Request>
+        <Request Method="GET" Guid="f7a79eba-35c8-43a2-a725-5afc21a70c68" Version="1.1" Url="https://csi.gstatic.com/csi" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Referer" Value="http://localhost:2564/Jobs/Create" />
+          </Headers>
+          <QueryStringParameters>
+            <QueryStringParameter Name="v" Value="2" RecordedValue="2" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="s" Value="mapsapi3" RecordedValue="mapsapi3" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="v3v" Value="27.5" RecordedValue="27.5" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="action" Value="map2" RecordedValue="map2" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="firstmap" Value="true" RecordedValue="true" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="hdpi" Value="true" RecordedValue="true" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="mob" Value="false" RecordedValue="false" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="staticmap" Value="true" RecordedValue="true" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="size" Value="657x194" RecordedValue="657x194" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="hadviewport" Value="true" RecordedValue="true" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="libraries" Value="places" RecordedValue="places" CorrelationBinding="{{QueryStringParam308.libraries}}" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="e" Value="10_1_0,10_2_0" RecordedValue="10_1_0,10_2_0" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="rt" Value="visreq.7897" RecordedValue="visreq.7897" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+          </QueryStringParameters>
+        </Request>
+        <Request Method="GET" Guid="5e21ba68-c36c-457e-9394-a310124ec315" Version="1.1" Url="https://csi.gstatic.com/csi" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Referer" Value="http://localhost:2564/Jobs/Create" />
+          </Headers>
+          <QueryStringParameters>
+            <QueryStringParameter Name="v" Value="2" RecordedValue="2" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="s" Value="mapsapi3" RecordedValue="mapsapi3" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="v3v" Value="27.5" RecordedValue="27.5" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="action" Value="map2" RecordedValue="map2" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="firstmap" Value="true" RecordedValue="true" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="hdpi" Value="true" RecordedValue="true" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="mob" Value="false" RecordedValue="false" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="staticmap" Value="true" RecordedValue="true" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="size" Value="657x194" RecordedValue="657x194" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="hadviewport" Value="true" RecordedValue="true" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="libraries" Value="places" RecordedValue="places" CorrelationBinding="{{QueryStringParam393.libraries}}" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="e" Value="10_1_0,10_2_0" RecordedValue="10_1_0,10_2_0" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="rt" Value="staticmap.7482,firstpixel.7482,allpixels.7482" RecordedValue="staticmap.7482,firstpixel.7482,allpixels.7482" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+          </QueryStringParameters>
+        </Request>
+        <Request Method="GET" Guid="519cc787-a99b-49c3-b089-a25d457bf22c" Version="1.1" Url="https://fonts.googleapis.com/css" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Referer" Value="http://localhost:2564/Jobs/Create" />
+          </Headers>
+          <QueryStringParameters>
+            <QueryStringParameter Name="family" Value="Roboto:300,400,500,700" RecordedValue="Roboto:300,400,500,700" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+          </QueryStringParameters>
+        </Request>
+        <Request Method="GET" Guid="ef6ace4d-356d-4c55-8ae1-e0213ccad13a" Version="1.1" Url="https://maps.googleapis.com/maps/gen_204" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Referer" Value="http://localhost:2564/Jobs/Create" />
+          </Headers>
+          <QueryStringParameters>
+            <QueryStringParameter Name="target" Value="api" RecordedValue="api" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="ev" Value="api_viewport" RecordedValue="api_viewport" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="cad" Value="host:localhost%3A2564,v:27,r:1,mt:m,c:43.653423%2C-79.3832,sp:0.19276x0.90225,size:657x194,relsize:0.13,token:6ya93e0n2i,src:apiv3,ts:skmk43" RecordedValue="host:localhost%3A2564,v:27,r:1,mt:m,c:43.653423%2C-79.3832,sp:0.19276x0.90225,size:657x194,relsize:0.13,token:6ya93e0n2i,src:apiv3,ts:skmk43" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+          </QueryStringParameters>
+        </Request>
+        <Request Method="GET" Guid="15a5faea-8fc9-44c0-b06f-cd21ab9a7b73" Version="1.1" Url="https://fonts.gstatic.com/s/roboto/v15/Hgo13k-tfSpn0qi1SFdUfT8E0i7KZn-EPnyo3HZu7kw.woff" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Referer" Value="http://localhost:2564/Jobs/Create" />
+          </Headers>
+        </Request>
+        <Request Method="GET" Guid="76a25def-eff1-41a4-88b8-21f205a0e3f1" Version="1.1" Url="https://fonts.gstatic.com/s/roboto/v15/2UX7WLTfW3W8TclTUvlFyQ.woff" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Referer" Value="http://localhost:2564/Jobs/Create" />
+          </Headers>
+        </Request>
+        <Request Method="GET" Guid="f00378e3-05f5-40b5-ad92-c370e47c2c14" Version="1.1" Url="https://fonts.gstatic.com/s/roboto/v15/RxZJdnzeo3R5zSexge8UUT8E0i7KZn-EPnyo3HZu7kw.woff" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Referer" Value="http://localhost:2564/Jobs/Create" />
+          </Headers>
+        </Request>
+        <Request Method="GET" Guid="4765d491-30d7-4f7c-bddc-a91fd5ab085c" Version="1.1" Url="https://fonts.gstatic.com/s/roboto/v15/d-6IYplOFocCacKzxwXSOD8E0i7KZn-EPnyo3HZu7kw.woff" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Referer" Value="http://localhost:2564/Jobs/Create" />
+          </Headers>
+        </Request>
+        <Request Method="GET" Guid="0df6c467-8187-499d-98f4-b1a78dbfc883" Version="1.1" Url="https://maps.googleapis.com/maps/api/js/ViewportInfoService.GetViewportInfo" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Referer" Value="http://localhost:2564/Jobs/Create" />
+          </Headers>
+          <QueryStringParameters>
+            <QueryStringParameter Name="" Value="1m6" RecordedValue="1m6" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="" Value="1m2" RecordedValue="1m2" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="" Value="1d43.35197185321179" RecordedValue="1d43.35197185321179" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="" Value="2d-80.74762565278087" RecordedValue="2d-80.74762565278087" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="" Value="2m2" RecordedValue="2m2" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="" Value="1d43.94953126959666" RecordedValue="1d43.94953126959666" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="" Value="2d-78.02969411374005" RecordedValue="2d-78.02969411374005" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="" Value="2u10" RecordedValue="2u10" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="" Value="4sen-CA" RecordedValue="4sen-CA" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="" Value="5e0" RecordedValue="5e0" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="" Value="6sm%40369000000" RecordedValue="6sm%40369000000" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="" Value="7b0" RecordedValue="7b0" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="" Value="8e0" RecordedValue="8e0" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="callback" Value="_xdc_._1q4xup" RecordedValue="_xdc_._1q4xup" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="token" Value="126202" RecordedValue="126202" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+          </QueryStringParameters>
+        </Request>
+        <Request Method="GET" Guid="51b1571d-0b85-490d-ac05-876d3de76e78" Version="1.1" Url="https://maps.googleapis.com/maps/api/js/AuthenticationService.Authenticate" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Referer" Value="http://localhost:2564/Jobs/Create" />
+          </Headers>
+          <QueryStringParameters>
+            <QueryStringParameter Name="" Value="1shttp%3A%2F%2Flocalhost%3A2564%2FJobs%2FCreate" RecordedValue="1shttp%3A%2F%2Flocalhost%3A2564%2FJobs%2FCreate" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="" Value="4sAIzaSyCltr_4hTmLvdTVWEuQ97mMZ6mTB_4YLCA" RecordedValue="4sAIzaSyCltr_4hTmLvdTVWEuQ97mMZ6mTB_4YLCA" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="callback" Value="_xdc_._qy31uf" RecordedValue="_xdc_._qy31uf" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="token" Value="114305" RecordedValue="114305" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+          </QueryStringParameters>
+        </Request>
+        <Request Method="GET" Guid="a781fbc8-8416-4aa9-8d7f-3562b8b2f0e4" Version="1.1" Url="https://csi.gstatic.com/csi" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Referer" Value="http://localhost:2564/Jobs/Create" />
+          </Headers>
+          <QueryStringParameters>
+            <QueryStringParameter Name="v" Value="2" RecordedValue="2" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="s" Value="mapsapi3" RecordedValue="mapsapi3" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="v3v" Value="27.5" RecordedValue="27.5" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="action" Value="map2" RecordedValue="map2" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="firstmap" Value="true" RecordedValue="true" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="hdpi" Value="true" RecordedValue="true" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="mob" Value="false" RecordedValue="false" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="staticmap" Value="true" RecordedValue="true" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="size" Value="657x194" RecordedValue="657x194" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="hadviewport" Value="true" RecordedValue="true" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="libraries" Value="places" RecordedValue="places" CorrelationBinding="{{QueryStringParam639.libraries}}" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="e" Value="10_1_0,10_2_0" RecordedValue="10_1_0,10_2_0" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="rt" Value="visres.8935" RecordedValue="visres.8935" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+          </QueryStringParameters>
+        </Request>
+      </DependentRequests>
+      <Headers>
+        <Header Name="Referer" Value="http://localhost:2564/Home/UserHome" />
+      </Headers>
+      <ExtractionRules>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractHiddenFields, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="1" DisplayName="Extract Hidden Fields" Description="Extract all hidden fields from the response and place them into the test context.">
+          <RuleParameters>
+            <RuleParameter Name="Required" Value="True" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+          </RuleParameters>
+        </ExtractionRule>
+      </ExtractionRules>
+      <CorrelationExtractionRules>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam1.JobType" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="lue=&quot;" />
+            <RuleParameter Name="EndsWith" Value="&quot;&gt;Fen" />
+            <RuleParameter Name="Index" Value="6" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="QueryStringParam228.libraries" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="&amp;libraries=" />
+            <RuleParameter Name="EndsWith" Value="&quot;" />
+            <RuleParameter Name="Index" Value="0" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="QueryStringParam265.libraries" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="&amp;libraries=" />
+            <RuleParameter Name="EndsWith" Value="&quot;" />
+            <RuleParameter Name="Index" Value="0" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="QueryStringParam308.libraries" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="&amp;libraries=" />
+            <RuleParameter Name="EndsWith" Value="&quot;" />
+            <RuleParameter Name="Index" Value="0" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="QueryStringParam393.libraries" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="&amp;libraries=" />
+            <RuleParameter Name="EndsWith" Value="&quot;" />
+            <RuleParameter Name="Index" Value="0" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="QueryStringParam639.libraries" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="&amp;libraries=" />
+            <RuleParameter Name="EndsWith" Value="&quot;" />
+            <RuleParameter Name="Index" Value="0" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="QueryStringParam749.libraries" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="&amp;libraries=" />
+            <RuleParameter Name="EndsWith" Value="&quot;" />
+            <RuleParameter Name="Index" Value="0" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="QueryStringParam761.libraries" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="&amp;libraries=" />
+            <RuleParameter Name="EndsWith" Value="&quot;" />
+            <RuleParameter Name="Index" Value="0" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="QueryStringParam810.libraries" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="&amp;libraries=" />
+            <RuleParameter Name="EndsWith" Value="&quot;" />
+            <RuleParameter Name="Index" Value="0" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="QueryStringParam895.libraries" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="&amp;libraries=" />
+            <RuleParameter Name="EndsWith" Value="&quot;" />
+            <RuleParameter Name="Index" Value="0" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="QueryStringParam1261.libraries" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="&amp;libraries=" />
+            <RuleParameter Name="EndsWith" Value="&quot;" />
+            <RuleParameter Name="Index" Value="0" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="QueryStringParam1360.libraries" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="&amp;libraries=" />
+            <RuleParameter Name="EndsWith" Value="&quot;" />
+            <RuleParameter Name="Index" Value="0" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+      </CorrelationExtractionRules>
+    </Request>
+    <Request Method="GET" Guid="dc5e231e-bd5e-4aca-8c3c-45f0c8226c51" Version="1.1" Url="http://localhost:40161/46bfb18f2cd1469181aac36573fad9bb/browserLinkSignalR/connect" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <QueryStringParameters>
+        <QueryStringParameter Name="transport" Value="webSockets" RecordedValue="webSockets" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="connectionToken" Value="AQAAANCMnd8BFdERjHoAwE%2FCl%2BsBAAAAxcqHhV%2Fpq0CSttprBLs%2BzgAAAAACAAAAAAAQZgAAAAEAACAAAADkwanRPnXFL30zR5SQQ7Dj3U%2B6c1vIm6%2Bncw5Nx4pX0gAAAAAOgAAAAAIAACAAAAA78hbdbeOcYrb5AB3j8qUi9A6wqVEyFv7WzEWCdgrw6zAAAAAZOLtyxcNNKzfYEfp7Y4pRrYXjPEh6Y9B8uR%2BiY2xDPV9pMBcy8GkIU2dMkQzKyT1AAAAALUeu2CfXP6JHSvQpQfBAdU%2B5oQXHw7hJjNE8YjqdyMofFj9lJkfxzaJBBFGvDrQ0vKsDVsg8FkV704%2FoKjkFwg%3D%3D" RecordedValue="AQAAANCMnd8BFdERjHoAwE%2FCl%2BsBAAAAxcqHhV%2Fpq0CSttprBLs%2BzgAAAAACAAAAAAAQZgAAAAEAACAAAADkwanRPnXFL30zR5SQQ7Dj3U%2B6c1vIm6%2Bncw5Nx4pX0gAAAAAOgAAAAAIAACAAAAA78hbdbeOcYrb5AB3j8qUi9A6wqVEyFv7WzEWCdgrw6zAAAAAZOLtyxcNNKzfYEfp7Y4pRrYXjPEh6Y9B8uR%2BiY2xDPV9pMBcy8GkIU2dMkQzKyT1AAAAALUeu2CfXP6JHSvQpQfBAdU%2B5oQXHw7hJjNE8YjqdyMofFj9lJkfxzaJBBFGvDrQ0vKsDVsg8FkV704%2FoKjkFwg%3D%3D" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="requestUrl" Value="http%3A%2F%2Flocalhost%3A2564%2FHome%2FUserHome" RecordedValue="http%3A%2F%2Flocalhost%3A2564%2FHome%2FUserHome" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="browserName" Value="Internet+Explorer" RecordedValue="Internet+Explorer" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="userAgent" Value="Mozilla%2F5.0+(Windows+NT+10.0%3B+WOW64%3B+Trident%2F7.0%3B+.NET4.0C%3B+.NET4.0E%3B+.NET+CLR+2.0.50727%3B+.NET+CLR+3.0.30729%3B+.NET+CLR+3.5.30729%3B+.NET+CLR+1.1.4322%3B+LCTE%3B+rv%3A11.0)+like+Gecko" RecordedValue="Mozilla%2F5.0+(Windows+NT+10.0%3B+WOW64%3B+Trident%2F7.0%3B+.NET4.0C%3B+.NET4.0E%3B+.NET+CLR+2.0.50727%3B+.NET+CLR+3.0.30729%3B+.NET+CLR+3.5.30729%3B+.NET+CLR+1.1.4322%3B+LCTE%3B+rv%3A11.0)+like+Gecko" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="tid" Value="3" RecordedValue="3" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="62ade372-ee5a-4836-a88e-18c94dadc2af" Version="1.1" Url="https://apps.applozic.com:15675/stomp/info" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="http://localhost:2564/Home/UserHome" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="t" Value="1481939656665" RecordedValue="1481939656665" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="d1d65a44-585f-4da0-8061-4ba90b422f78" Version="1.1" Url="http://localhost:2564/__browserLink/requestData/5db1d645228e447a88a1edc6d35424be" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Accept" Value="application/json, text/javascript, */*; q=0.01" />
+        <Header Name="X-Requested-With" Value="XMLHttpRequest" />
+        <Header Name="Referer" Value="http://localhost:2564/Home/UserHome" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="version" Value="2" RecordedValue="2" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="4d83d20e-d7f1-4db3-84f5-4eb276c8b4f3" Version="1.1" Url="https://apps.applozic.com:15675/stomp/275/pcbnauox/websocket" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False" />
+    <Request Method="GET" Guid="bf832bb5-98c4-4d40-bf3b-0e69d4692422" Version="1.1" Url="https://maps.googleapis.com/maps/api/js/AuthenticationService.Authenticate" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="http://localhost:2564/Home/UserHome" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="" Value="1shttp%3A%2F%2Flocalhost%3A2564%2FHome%2FUserHome" RecordedValue="1shttp%3A%2F%2Flocalhost%3A2564%2FHome%2FUserHome" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="" Value="4sAIzaSyDKfWHzu9X7Z2hByeW4RRFJrD9SizOzZt4" RecordedValue="4sAIzaSyDKfWHzu9X7Z2hByeW4RRFJrD9SizOzZt4" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="callback" Value="_xdc_._4oawtq" RecordedValue="_xdc_._4oawtq" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="token" Value="57091" RecordedValue="57091" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="POST" Guid="34616cd4-75b0-4237-94d7-5afd265df67f" Version="1.1" Url="http://localhost:40161/46bfb18f2cd1469181aac36573fad9bb/browserLinkSignalR/abort" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Accept" Value="text/plain, */*; q=0.01" />
+        <Header Name="Referer" Value="http://localhost:2564/Home/UserHome" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="transport" Value="webSockets" RecordedValue="webSockets" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="connectionToken" Value="AQAAANCMnd8BFdERjHoAwE%2FCl%2BsBAAAAxcqHhV%2Fpq0CSttprBLs%2BzgAAAAACAAAAAAAQZgAAAAEAACAAAADkwanRPnXFL30zR5SQQ7Dj3U%2B6c1vIm6%2Bncw5Nx4pX0gAAAAAOgAAAAAIAACAAAAA78hbdbeOcYrb5AB3j8qUi9A6wqVEyFv7WzEWCdgrw6zAAAAAZOLtyxcNNKzfYEfp7Y4pRrYXjPEh6Y9B8uR%2BiY2xDPV9pMBcy8GkIU2dMkQzKyT1AAAAALUeu2CfXP6JHSvQpQfBAdU%2B5oQXHw7hJjNE8YjqdyMofFj9lJkfxzaJBBFGvDrQ0vKsDVsg8FkV704%2FoKjkFwg%3D%3D" RecordedValue="AQAAANCMnd8BFdERjHoAwE%2FCl%2BsBAAAAxcqHhV%2Fpq0CSttprBLs%2BzgAAAAACAAAAAAAQZgAAAAEAACAAAADkwanRPnXFL30zR5SQQ7Dj3U%2B6c1vIm6%2Bncw5Nx4pX0gAAAAAOgAAAAAIAACAAAAA78hbdbeOcYrb5AB3j8qUi9A6wqVEyFv7WzEWCdgrw6zAAAAAZOLtyxcNNKzfYEfp7Y4pRrYXjPEh6Y9B8uR%2BiY2xDPV9pMBcy8GkIU2dMkQzKyT1AAAAALUeu2CfXP6JHSvQpQfBAdU%2B5oQXHw7hJjNE8YjqdyMofFj9lJkfxzaJBBFGvDrQ0vKsDVsg8FkV704%2FoKjkFwg%3D%3D" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="requestUrl" Value="http%3A%2F%2Flocalhost%3A2564%2FHome%2FUserHome" RecordedValue="http%3A%2F%2Flocalhost%3A2564%2FHome%2FUserHome" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="browserName" Value="Internet+Explorer" RecordedValue="Internet+Explorer" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="userAgent" Value="Mozilla%2F5.0+(Windows+NT+10.0%3B+WOW64%3B+Trident%2F7.0%3B+.NET4.0C%3B+.NET4.0E%3B+.NET+CLR+2.0.50727%3B+.NET+CLR+3.0.30729%3B+.NET+CLR+3.5.30729%3B+.NET+CLR+1.1.4322%3B+LCTE%3B+rv%3A11.0)+like+Gecko" RecordedValue="Mozilla%2F5.0+(Windows+NT+10.0%3B+WOW64%3B+Trident%2F7.0%3B+.NET4.0C%3B+.NET4.0E%3B+.NET+CLR+2.0.50727%3B+.NET+CLR+3.0.30729%3B+.NET+CLR+3.5.30729%3B+.NET+CLR+1.1.4322%3B+LCTE%3B+rv%3A11.0)+like+Gecko" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+      <FormPostHttpBody />
+    </Request>
+    <Request Method="POST" Guid="1e67d8a0-6c94-4591-855c-0fde68ac14f6" Version="1.1" Url="http://localhost:40161/46bfb18f2cd1469181aac36573fad9bb/browserLinkSignalR/negotiate" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Content-Type" Value="application/x-www-form-urlencoded; charset=UTF-8" />
+        <Header Name="Accept" Value="text/plain, */*; q=0.01" />
+        <Header Name="Referer" Value="http://localhost:2564/Jobs/Create" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="requestUrl" Value="http%3A%2F%2Flocalhost%3A2564%2FJobs%2FCreate" RecordedValue="http%3A%2F%2Flocalhost%3A2564%2FJobs%2FCreate" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="browserName" Value="Internet+Explorer" RecordedValue="Internet+Explorer" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="userAgent" Value="Mozilla%2F5.0+(Windows+NT+10.0%3B+WOW64%3B+Trident%2F7.0%3B+.NET4.0C%3B+.NET4.0E%3B+.NET+CLR+2.0.50727%3B+.NET+CLR+3.0.30729%3B+.NET+CLR+3.5.30729%3B+.NET+CLR+1.1.4322%3B+LCTE%3B+rv%3A11.0)+like+Gecko" RecordedValue="Mozilla%2F5.0+(Windows+NT+10.0%3B+WOW64%3B+Trident%2F7.0%3B+.NET4.0C%3B+.NET4.0E%3B+.NET+CLR+2.0.50727%3B+.NET+CLR+3.0.30729%3B+.NET+CLR+3.5.30729%3B+.NET+CLR+1.1.4322%3B+LCTE%3B+rv%3A11.0)+like+Gecko" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="clientProtocol" Value="1.3" RecordedValue="1.3" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="_" Value="1481939687509" RecordedValue="1481939687509" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+      <FormPostHttpBody />
+    </Request>
+    <Request Method="GET" Guid="204fbd91-ba1a-4d0c-ad1f-afa3c6ace055" Version="1.1" Url="https://maps.google.com/maps/api/js" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="http://localhost:2564/Jobs/Create" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="libraries" Value="places" RecordedValue="places" CorrelationBinding="{{QueryStringParam749.libraries}}" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="key" Value="AIzaSyDKfWHzu9X7Z2hByeW4RRFJrD9SizOzZt4" RecordedValue="AIzaSyDKfWHzu9X7Z2hByeW4RRFJrD9SizOzZt4" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="OPTIONS" Guid="f9def7c5-66bc-496b-8b69-e22a29c2e2ec" Version="1.1" Url="https://apps.applozic.com/v2/tab/initialize.page" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Content-Type" Value="application/json" />
+        <Header Name="Accept" Value="*/*" />
+        <Header Name="Referer" Value="http://localhost:2564/Jobs/Create" />
+      </Headers>
+      <StringHttpBody ContentType="application/json" InsertByteOrderMark="False">
+      </StringHttpBody>
+    </Request>
+    <Request Method="OPTIONS" Guid="fecff7d5-a868-4aa2-90c0-751d72f610cd" Version="1.1" Url="https://apps.applozic.com/rest/ws/message/list" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Content-Type" Value="application/json" />
+        <Header Name="Accept" Value="*/*" />
+        <Header Name="Referer" Value="http://localhost:2564/Jobs/Create" />
+      </Headers>
+      <StringHttpBody ContentType="application/json" InsertByteOrderMark="False">
+      </StringHttpBody>
+    </Request>
+    <Request Method="GET" Guid="980f2fcf-715b-43ed-bcee-673e3a99d6d9" Version="1.1" Url="https://csi.gstatic.com/csi" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="http://localhost:2564/Jobs/Create" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="v" Value="2" RecordedValue="2" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="s" Value="mapsapi3" RecordedValue="mapsapi3" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="v3v" Value="27.5" RecordedValue="27.5" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="action" Value="apiboot2" RecordedValue="apiboot2" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="libraries" Value="places" RecordedValue="places" CorrelationBinding="{{QueryStringParam761.libraries}}" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="e" Value="10_1_0,10_2_0" RecordedValue="10_1_0,10_2_0" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="rt" Value="main.6" RecordedValue="main.6" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="4cb3ef7c-9456-4697-9ad8-d87a5d0c7d7c" Version="1.1" Url="https://csi.gstatic.com/csi" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="http://localhost:2564/Jobs/Create" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="v" Value="2" RecordedValue="2" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="s" Value="mapsapi3" RecordedValue="mapsapi3" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="v3v" Value="27.5" RecordedValue="27.5" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="action" Value="map2" RecordedValue="map2" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="firstmap" Value="true" RecordedValue="true" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="hdpi" Value="true" RecordedValue="true" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="mob" Value="false" RecordedValue="false" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="staticmap" Value="true" RecordedValue="true" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="size" Value="657x194" RecordedValue="657x194" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="hadviewport" Value="true" RecordedValue="true" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="libraries" Value="places" RecordedValue="places" CorrelationBinding="{{QueryStringParam810.libraries}}" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="e" Value="10_1_0,10_2_0" RecordedValue="10_1_0,10_2_0" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="rt" Value="firsttile.9954" RecordedValue="firsttile.9954" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="0d066b8e-d572-4751-814b-17b39e94ae07" Version="1.1" Url="https://csi.gstatic.com/csi" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="http://localhost:2564/Jobs/Create" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="v" Value="2" RecordedValue="2" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="s" Value="mapsapi3" RecordedValue="mapsapi3" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="v3v" Value="27.5" RecordedValue="27.5" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="action" Value="map2" RecordedValue="map2" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="firstmap" Value="true" RecordedValue="true" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="hdpi" Value="true" RecordedValue="true" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="mob" Value="false" RecordedValue="false" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="staticmap" Value="true" RecordedValue="true" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="size" Value="657x194" RecordedValue="657x194" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="hadviewport" Value="true" RecordedValue="true" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="libraries" Value="places" RecordedValue="places" CorrelationBinding="{{QueryStringParam895.libraries}}" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="e" Value="10_1_0,10_2_0" RecordedValue="10_1_0,10_2_0" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="rt" Value="tilesloaded.9961" RecordedValue="tilesloaded.9961" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="POST" Guid="4f87ee51-7b62-41aa-8723-fa318ab930ab" Version="1.1" Url="https://apps.applozic.com/v2/tab/initialize.page" ThinkTime="22" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Accept" Value="*/*" />
+        <Header Name="Referer" Value="http://localhost:2564/Jobs/Create" />
+      </Headers>
+      <StringHttpBody ContentType="application/json" InsertByteOrderMark="False">ewAiAGEAcABwAGwAaQBjAGEAdABpAG8AbgBJAGQAIgA6ACIAMgAyADIAZQBhADAANABmADIAOABjADgANgA2AGQAMgA2AGIAZgBmADYAMgAzAGIAMgBhAGUANAA3ADYANgA1AGMAIgAsACIAdQBzAGUAcgBJAGQAIgA6ACIAZgBjAGYANgBmADIANQA4AC0AMgA1ADgANAAtADQAZgBlADkALQA5ADIAZgAzAC0AMgBiADEANwBjAGIAYgBjADcAOAA4ADUAIgAsACIAZABpAHMAcABsAGEAeQBOAGEAbQBlACIAOgAiAG4AZQB3AHUAcwBlAHIAQAB0AGUAcwB0AC4AYwBvAG0AIgAsACIAZQBuAGEAYgBsAGUARQBuAGMAcgB5AHAAdABpAG8AbgAiADoAdAByAHUAZQAsACIAYQBwAHAAVgBlAHIAcwBpAG8AbgBDAG8AZABlACIAOgAxADAAOAAsACIAYQB1AHQAaABlAG4AdABpAGMAYQB0AGkAbwBuAFQAeQBwAGUASQBkACIAOgAwAH0A</StringHttpBody>
+    </Request>
+    <Request Method="POST" Guid="400d1e0b-9f7d-4df8-a1e9-fd8ba3a7da07" Version="1.1" Url="http://localhost:2564/Jobs/Create" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="http://localhost:2564/Jobs" ReportingName="" IgnoreHttpStatusCode="False">
+      <DependentRequests>
+        <Request Method="GET" Guid="0ca1d4d9-5e48-47c1-be0c-601bb5a8b082" Version="1.1" Url="https://apps.applozic.com/sidebox.app" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Referer" Value="http://localhost:2564/Jobs" />
+          </Headers>
+        </Request>
+        <Request Method="GET" Guid="cc16950f-3e39-4bbf-bc3a-3a847314b6eb" Version="1.1" Url="https://fonts.gstatic.com/s/lato/v11/9k-RPmcnxYEPm8CNFsH2gg.woff" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Referer" Value="http://localhost:2564/Jobs" />
+          </Headers>
+        </Request>
+        <Request Method="GET" Guid="fd33b2be-9ed8-4ce8-8ab8-99480ed2ce0a" Version="1.1" Url="https://fonts.gstatic.com/s/montserrat/v7/zhcz-_WihjSQC0oHJ9TCYBsxEYwM7FgeyaSgU71cLG0.woff" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Referer" Value="http://localhost:2564/Jobs" />
+          </Headers>
+        </Request>
+        <Request Method="GET" Guid="e12db6a7-9ed7-4095-affd-db3ba8871d9c" Version="1.1" Url="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/fonts/fontawesome-webfont.eot" ThinkTime="3" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Referer" Value="http://localhost:2564/Jobs" />
+          </Headers>
+          <QueryStringParameters>
+            <QueryStringParameter Name="" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+          </QueryStringParameters>
+        </Request>
+        <Request Method="GET" Guid="bc218855-e148-42b2-a174-69f3808e87c5" Version="1.1" Url="https://apps.applozic.com/resources/1608/sidebox/template/mck-sidebox.html" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Accept" Value="*/*" />
+            <Header Name="Referer" Value="http://localhost:2564/Jobs" />
+          </Headers>
+        </Request>
+      </DependentRequests>
+      <Headers>
+        <Header Name="Referer" Value="http://localhost:2564/Jobs/Create" />
+      </Headers>
+      <ExtractionRules>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractHiddenFields, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="1" DisplayName="Extract Hidden Fields" Description="Extract all hidden fields from the response and place them into the test context.">
+          <RuleParameters>
+            <RuleParameter Name="Required" Value="True" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+          </RuleParameters>
+        </ExtractionRule>
+      </ExtractionRules>
+      <FormPostHttpBody>
+        <FormPostParameter Name="__RequestVerificationToken" Value="{{$HIDDEN1.__RequestVerificationToken}}" RecordedValue="bDiLZXDA4RkAz19MYyi5HTEdbtYKds9ojnHcVoYOsle91pKL3GgVtepJIKd4PCU5m0OTb_ebbFKFXMwl4jiWjbnPZ6c4BYtf-X32vO70NYWkulLZZGGdZCAx0jY2Jy7oORo0ew-ILx90JwXKjt8ZIA2" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="JobTitle" Value="Job" RecordedValue="Job" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="JobType" Value="Fencing" RecordedValue="Fencing" CorrelationBinding="{{FormPostParam1.JobType}}" UrlEncode="True" />
+        <FormPostParameter Name="JobDecription" Value="job" RecordedValue="job" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="Latitude" Value="43.68833167670989" RecordedValue="43.68833167670989" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="Longitude" Value="-79.49226379394531" RecordedValue="-79.49226379394531" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="Latitude" Value="{{$HIDDEN1.Latitude}}" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="Longitude" Value="{{$HIDDEN1.Longitude}}" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+      </FormPostHttpBody>
+    </Request>
+    <Request Method="GET" Guid="df57c45a-ca05-4338-8d83-2223306ada55" Version="1.1" Url="http://localhost:40161/46bfb18f2cd1469181aac36573fad9bb/browserLinkSignalR/connect" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <QueryStringParameters>
+        <QueryStringParameter Name="transport" Value="webSockets" RecordedValue="webSockets" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="connectionToken" Value="AQAAANCMnd8BFdERjHoAwE%2FCl%2BsBAAAAxcqHhV%2Fpq0CSttprBLs%2BzgAAAAACAAAAAAAQZgAAAAEAACAAAABRvnl6qZtpCx3qVR7ZgT1Z7rPPiDl55uKFjFvGNhZEdgAAAAAOgAAAAAIAACAAAAAW%2BVsb7rSxlxbvvL9fldYrDzKnGCIJVcumxbN5H5P1GTAAAADB6F8Fos39KhZXOI6I1mOsns5IE4ji%2FYI2GMrEOHl70EjPi%2BgAT9PEB2CmkZFB2%2FpAAAAADtXzhmvUY188eYDcckIfOzMu6f43C6a32UelbJ6vtgsPFd3SL3GuCmJKFc3YItGJfkpIJd2JZNBd7t04JLWFgg%3D%3D" RecordedValue="AQAAANCMnd8BFdERjHoAwE%2FCl%2BsBAAAAxcqHhV%2Fpq0CSttprBLs%2BzgAAAAACAAAAAAAQZgAAAAEAACAAAABRvnl6qZtpCx3qVR7ZgT1Z7rPPiDl55uKFjFvGNhZEdgAAAAAOgAAAAAIAACAAAAAW%2BVsb7rSxlxbvvL9fldYrDzKnGCIJVcumxbN5H5P1GTAAAADB6F8Fos39KhZXOI6I1mOsns5IE4ji%2FYI2GMrEOHl70EjPi%2BgAT9PEB2CmkZFB2%2FpAAAAADtXzhmvUY188eYDcckIfOzMu6f43C6a32UelbJ6vtgsPFd3SL3GuCmJKFc3YItGJfkpIJd2JZNBd7t04JLWFgg%3D%3D" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="requestUrl" Value="http%3A%2F%2Flocalhost%3A2564%2FJobs%2FCreate" RecordedValue="http%3A%2F%2Flocalhost%3A2564%2FJobs%2FCreate" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="browserName" Value="Internet+Explorer" RecordedValue="Internet+Explorer" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="userAgent" Value="Mozilla%2F5.0+(Windows+NT+10.0%3B+WOW64%3B+Trident%2F7.0%3B+.NET4.0C%3B+.NET4.0E%3B+.NET+CLR+2.0.50727%3B+.NET+CLR+3.0.30729%3B+.NET+CLR+3.5.30729%3B+.NET+CLR+1.1.4322%3B+LCTE%3B+rv%3A11.0)+like+Gecko" RecordedValue="Mozilla%2F5.0+(Windows+NT+10.0%3B+WOW64%3B+Trident%2F7.0%3B+.NET4.0C%3B+.NET4.0E%3B+.NET+CLR+2.0.50727%3B+.NET+CLR+3.0.30729%3B+.NET+CLR+3.5.30729%3B+.NET+CLR+1.1.4322%3B+LCTE%3B+rv%3A11.0)+like+Gecko" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="tid" Value="6" RecordedValue="6" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="1667b003-bf57-4dd0-9c80-71b81bf4a1c8" Version="1.1" Url="https://maps.googleapis.com/maps/vt" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="http://localhost:2564/Jobs/Create" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="pb" Value="!1m4!1m3!1i10!2i284!3i373!1m4!1m3!1i10!2i285!3i373!1m4!1m3!1i10!2i284!3i374!1m4!1m3!1i10!2i285!3i374!1m4!1m3!1i10!2i286!3i373!1m4!1m3!1i10!2i287!3i373!1m4!1m3!1i10!2i286!3i374!1m4!1m3!1i10!2i287!3i374!2m3!1e0!2sm!3i369048543!3m9!2sen-CA!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!4e3!12m1!5b1" RecordedValue="!1m4!1m3!1i10!2i284!3i373!1m4!1m3!1i10!2i285!3i373!1m4!1m3!1i10!2i284!3i374!1m4!1m3!1i10!2i285!3i374!1m4!1m3!1i10!2i286!3i373!1m4!1m3!1i10!2i287!3i373!1m4!1m3!1i10!2i286!3i374!1m4!1m3!1i10!2i287!3i374!2m3!1e0!2sm!3i369048543!3m9!2sen-CA!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!4e3!12m1!5b1" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="callback" Value="_xdc_._1gnkge" RecordedValue="_xdc_._1gnkge" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="token" Value="121457" RecordedValue="121457" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="fed1cc0a-4a90-4fbf-9faf-a44202135305" Version="1.1" Url="https://apps.applozic.com:15675/stomp/info" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="http://localhost:2564/Jobs/Create" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="t" Value="1481939691045" RecordedValue="1481939691045" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="2b27a8c4-11c2-4cf9-9c02-9ccdd901aad8" Version="1.1" Url="http://localhost:2564/__browserLink/requestData/3a8e9fb9eaa24d748341006e4d9c0a8c" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Accept" Value="application/json, text/javascript, */*; q=0.01" />
+        <Header Name="X-Requested-With" Value="XMLHttpRequest" />
+        <Header Name="Referer" Value="http://localhost:2564/Jobs/Create" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="version" Value="2" RecordedValue="2" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="c22390b1-974a-44a8-806f-24c6d1364fcb" Version="1.1" Url="https://apps.applozic.com:15675/stomp/821/lzdhjeev/websocket" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False" />
+    <Request Method="GET" Guid="3daf65b8-c9c2-4d69-9f3d-4b3647e13586" Version="1.1" Url="https://maps.googleapis.com/maps/gen_204" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="http://localhost:2564/Jobs/Create" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="target" Value="api" RecordedValue="api" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="ev" Value="api_alreadyloaded" RecordedValue="api_alreadyloaded" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="client" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="key" Value="AIzaSyDKfWHzu9X7Z2hByeW4RRFJrD9SizOzZt4" RecordedValue="AIzaSyDKfWHzu9X7Z2hByeW4RRFJrD9SizOzZt4" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="cad" Value="src:apiv3,token:1i5jhovf0g,ts:skmpcv" RecordedValue="src:apiv3,token:1i5jhovf0g,ts:skmpcv" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="e136971a-6ea6-4aa4-bbf8-fe689369aa36" Version="1.1" Url="https://maps.googleapis.com/maps/api/js/AuthenticationService.Authenticate" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="http://localhost:2564/Jobs/Create" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="" Value="1shttp%3A%2F%2Flocalhost%3A2564%2FJobs%2FCreate" RecordedValue="1shttp%3A%2F%2Flocalhost%3A2564%2FJobs%2FCreate" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="" Value="4sAIzaSyDKfWHzu9X7Z2hByeW4RRFJrD9SizOzZt4" RecordedValue="4sAIzaSyDKfWHzu9X7Z2hByeW4RRFJrD9SizOzZt4" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="callback" Value="_xdc_._3zc834" RecordedValue="_xdc_._3zc834" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="token" Value="4779" RecordedValue="4779" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="30bc0cc9-9708-4fd2-9e0d-2b94913802e3" Version="1.1" Url="https://maps.googleapis.com/maps/api/js/QuotaService.RecordEvent" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="http://localhost:2564/Jobs/Create" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="" Value="1shttp%3A%2F%2Flocalhost%3A2564%2FJobs%2FCreate" RecordedValue="1shttp%3A%2F%2Flocalhost%3A2564%2FJobs%2FCreate" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="" Value="3sAIzaSyCltr_4hTmLvdTVWEuQ97mMZ6mTB_4YLCA" RecordedValue="3sAIzaSyCltr_4hTmLvdTVWEuQ97mMZ6mTB_4YLCA" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="" Value="5e0" RecordedValue="5e0" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="" Value="6u1" RecordedValue="6u1" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="" Value="7sskmpeb" RecordedValue="7sskmpeb" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="callback" Value="_xdc_._qv4ime" RecordedValue="_xdc_._qv4ime" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="token" Value="50992" RecordedValue="50992" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="POST" Guid="27bda391-a7fc-43fa-b79a-be83d5096893" Version="1.1" Url="http://localhost:40161/46bfb18f2cd1469181aac36573fad9bb/browserLinkSignalR/abort" ThinkTime="1" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Accept" Value="text/plain, */*; q=0.01" />
+        <Header Name="Referer" Value="http://localhost:2564/Jobs/Create" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="transport" Value="webSockets" RecordedValue="webSockets" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="connectionToken" Value="AQAAANCMnd8BFdERjHoAwE%2FCl%2BsBAAAAxcqHhV%2Fpq0CSttprBLs%2BzgAAAAACAAAAAAAQZgAAAAEAACAAAABRvnl6qZtpCx3qVR7ZgT1Z7rPPiDl55uKFjFvGNhZEdgAAAAAOgAAAAAIAACAAAAAW%2BVsb7rSxlxbvvL9fldYrDzKnGCIJVcumxbN5H5P1GTAAAADB6F8Fos39KhZXOI6I1mOsns5IE4ji%2FYI2GMrEOHl70EjPi%2BgAT9PEB2CmkZFB2%2FpAAAAADtXzhmvUY188eYDcckIfOzMu6f43C6a32UelbJ6vtgsPFd3SL3GuCmJKFc3YItGJfkpIJd2JZNBd7t04JLWFgg%3D%3D" RecordedValue="AQAAANCMnd8BFdERjHoAwE%2FCl%2BsBAAAAxcqHhV%2Fpq0CSttprBLs%2BzgAAAAACAAAAAAAQZgAAAAEAACAAAABRvnl6qZtpCx3qVR7ZgT1Z7rPPiDl55uKFjFvGNhZEdgAAAAAOgAAAAAIAACAAAAAW%2BVsb7rSxlxbvvL9fldYrDzKnGCIJVcumxbN5H5P1GTAAAADB6F8Fos39KhZXOI6I1mOsns5IE4ji%2FYI2GMrEOHl70EjPi%2BgAT9PEB2CmkZFB2%2FpAAAAADtXzhmvUY188eYDcckIfOzMu6f43C6a32UelbJ6vtgsPFd3SL3GuCmJKFc3YItGJfkpIJd2JZNBd7t04JLWFgg%3D%3D" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="requestUrl" Value="http%3A%2F%2Flocalhost%3A2564%2FJobs%2FCreate" RecordedValue="http%3A%2F%2Flocalhost%3A2564%2FJobs%2FCreate" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="browserName" Value="Internet+Explorer" RecordedValue="Internet+Explorer" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="userAgent" Value="Mozilla%2F5.0+(Windows+NT+10.0%3B+WOW64%3B+Trident%2F7.0%3B+.NET4.0C%3B+.NET4.0E%3B+.NET+CLR+2.0.50727%3B+.NET+CLR+3.0.30729%3B+.NET+CLR+3.5.30729%3B+.NET+CLR+1.1.4322%3B+LCTE%3B+rv%3A11.0)+like+Gecko" RecordedValue="Mozilla%2F5.0+(Windows+NT+10.0%3B+WOW64%3B+Trident%2F7.0%3B+.NET4.0C%3B+.NET4.0E%3B+.NET+CLR+2.0.50727%3B+.NET+CLR+3.0.30729%3B+.NET+CLR+3.5.30729%3B+.NET+CLR+1.1.4322%3B+LCTE%3B+rv%3A11.0)+like+Gecko" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+      <FormPostHttpBody />
+    </Request>
+    <Request Method="POST" Guid="9cf8bfaa-df62-4380-90e6-db069ac62c3b" Version="1.1" Url="http://localhost:40161/46bfb18f2cd1469181aac36573fad9bb/browserLinkSignalR/negotiate" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Content-Type" Value="application/x-www-form-urlencoded; charset=UTF-8" />
+        <Header Name="Accept" Value="text/plain, */*; q=0.01" />
+        <Header Name="Referer" Value="http://localhost:2564/Jobs" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="requestUrl" Value="http%3A%2F%2Flocalhost%3A2564%2FJobs" RecordedValue="http%3A%2F%2Flocalhost%3A2564%2FJobs" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="browserName" Value="Internet+Explorer" RecordedValue="Internet+Explorer" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="userAgent" Value="Mozilla%2F5.0+(Windows+NT+10.0%3B+WOW64%3B+Trident%2F7.0%3B+.NET4.0C%3B+.NET4.0E%3B+.NET+CLR+2.0.50727%3B+.NET+CLR+3.0.30729%3B+.NET+CLR+3.5.30729%3B+.NET+CLR+1.1.4322%3B+LCTE%3B+rv%3A11.0)+like+Gecko" RecordedValue="Mozilla%2F5.0+(Windows+NT+10.0%3B+WOW64%3B+Trident%2F7.0%3B+.NET4.0C%3B+.NET4.0E%3B+.NET+CLR+2.0.50727%3B+.NET+CLR+3.0.30729%3B+.NET+CLR+3.5.30729%3B+.NET+CLR+1.1.4322%3B+LCTE%3B+rv%3A11.0)+like+Gecko" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="clientProtocol" Value="1.3" RecordedValue="1.3" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="_" Value="1481939719628" RecordedValue="1481939719628" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+      <FormPostHttpBody />
+    </Request>
+    <Request Method="GET" Guid="19cc18f6-2fb0-48f9-be7c-1849157c5ba0" Version="1.1" Url="https://maps.google.com/maps/api/js" ThinkTime="7" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="http://localhost:2564/Jobs" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="libraries" Value="places" RecordedValue="places" CorrelationBinding="{{QueryStringParam1261.libraries}}" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="key" Value="AIzaSyDKfWHzu9X7Z2hByeW4RRFJrD9SizOzZt4" RecordedValue="AIzaSyDKfWHzu9X7Z2hByeW4RRFJrD9SizOzZt4" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="POST" Guid="014bd083-3656-4168-804d-87e3ca811d97" Version="1.1" Url="http://localhost:2564/Account/LogOff" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="http://localhost:2564/" ReportingName="" IgnoreHttpStatusCode="False">
+      <DependentRequests>
+        <Request Method="GET" Guid="0567d838-ba95-4b7f-9411-442b5b4b39de" Version="1.1" Url="https://fonts.gstatic.com/s/lato/v11/9k-RPmcnxYEPm8CNFsH2gg.woff" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Referer" Value="http://localhost:2564/" />
+          </Headers>
+        </Request>
+        <Request Method="GET" Guid="523f1d12-43c3-4061-852f-abbfc5202db6" Version="1.1" Url="https://fonts.gstatic.com/s/montserrat/v7/zhcz-_WihjSQC0oHJ9TCYBsxEYwM7FgeyaSgU71cLG0.woff" ThinkTime="3" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Referer" Value="http://localhost:2564/" />
+          </Headers>
+        </Request>
+        <Request Method="GET" Guid="fa0ab473-b97c-4e14-8012-f1bd67dab00e" Version="1.1" Url="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/fonts/fontawesome-webfont.eot" ThinkTime="1" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Referer" Value="http://localhost:2564/" />
+          </Headers>
+          <QueryStringParameters>
+            <QueryStringParameter Name="" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+          </QueryStringParameters>
+        </Request>
+      </DependentRequests>
+      <Headers>
+        <Header Name="Referer" Value="http://localhost:2564/Jobs" />
+      </Headers>
+      <FormPostHttpBody>
+        <FormPostParameter Name="__RequestVerificationToken" Value="{{$HIDDEN1.__RequestVerificationToken}}" RecordedValue="_eTPDV2uH5VRUFqkrGRIxEt0Bnvwu6GPvyaFilUPZsBAmnAAAAmq1OZGaIN4fSU6gzUZabZ-yHoCoOh8jRDzUWv2vQ2KSabZuLgimpTLFeuABtHivRwnXYr0FaoelYKxWTWuYzUURJmw8o7UDkIwtQ2" CorrelationBinding="" UrlEncode="True" />
+      </FormPostHttpBody>
+    </Request>
+    <Request Method="GET" Guid="a22da803-d7c3-44db-b019-3e0a038d83f9" Version="1.1" Url="http://localhost:40161/46bfb18f2cd1469181aac36573fad9bb/browserLinkSignalR/connect" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <QueryStringParameters>
+        <QueryStringParameter Name="transport" Value="webSockets" RecordedValue="webSockets" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="connectionToken" Value="AQAAANCMnd8BFdERjHoAwE%2FCl%2BsBAAAAxcqHhV%2Fpq0CSttprBLs%2BzgAAAAACAAAAAAAQZgAAAAEAACAAAABkcjGA3vkJI3Ui3MLank87i%2F2XJaJGp6o4qrnz6BICvQAAAAAOgAAAAAIAACAAAADdswPKB3hpMDGtQsadypzPfwkzdLaFD7FKJ496OKz5GDAAAAATPOjJz9b3ia5V5Gk2Kk3DhX%2FqexOcN6M9%2Bno05Rev%2F6OV2IQdN%2B9CxpJikEMlH9hAAAAAb0%2BPj6uW%2BbIdCzzXsG7L3AZb%2FSmaIsCMjOXmEaAb%2Bq4vrFzeGHFqaDJys7pSxO7001iuT%2F8FwBUOegQOu6X7vg%3D%3D" RecordedValue="AQAAANCMnd8BFdERjHoAwE%2FCl%2BsBAAAAxcqHhV%2Fpq0CSttprBLs%2BzgAAAAACAAAAAAAQZgAAAAEAACAAAABkcjGA3vkJI3Ui3MLank87i%2F2XJaJGp6o4qrnz6BICvQAAAAAOgAAAAAIAACAAAADdswPKB3hpMDGtQsadypzPfwkzdLaFD7FKJ496OKz5GDAAAAATPOjJz9b3ia5V5Gk2Kk3DhX%2FqexOcN6M9%2Bno05Rev%2F6OV2IQdN%2B9CxpJikEMlH9hAAAAAb0%2BPj6uW%2BbIdCzzXsG7L3AZb%2FSmaIsCMjOXmEaAb%2Bq4vrFzeGHFqaDJys7pSxO7001iuT%2F8FwBUOegQOu6X7vg%3D%3D" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="requestUrl" Value="http%3A%2F%2Flocalhost%3A2564%2FJobs" RecordedValue="http%3A%2F%2Flocalhost%3A2564%2FJobs" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="browserName" Value="Internet+Explorer" RecordedValue="Internet+Explorer" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="userAgent" Value="Mozilla%2F5.0+(Windows+NT+10.0%3B+WOW64%3B+Trident%2F7.0%3B+.NET4.0C%3B+.NET4.0E%3B+.NET+CLR+2.0.50727%3B+.NET+CLR+3.0.30729%3B+.NET+CLR+3.5.30729%3B+.NET+CLR+1.1.4322%3B+LCTE%3B+rv%3A11.0)+like+Gecko" RecordedValue="Mozilla%2F5.0+(Windows+NT+10.0%3B+WOW64%3B+Trident%2F7.0%3B+.NET4.0C%3B+.NET4.0E%3B+.NET+CLR+2.0.50727%3B+.NET+CLR+3.0.30729%3B+.NET+CLR+3.5.30729%3B+.NET+CLR+1.1.4322%3B+LCTE%3B+rv%3A11.0)+like+Gecko" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="tid" Value="6" RecordedValue="6" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="OPTIONS" Guid="e5b0fd98-0ebc-44fe-8114-4268ecbef2e4" Version="1.1" Url="https://apps.applozic.com/v2/tab/initialize.page" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Content-Type" Value="application/json" />
+        <Header Name="Accept" Value="*/*" />
+        <Header Name="Referer" Value="http://localhost:2564/Jobs" />
+      </Headers>
+      <StringHttpBody ContentType="application/json" InsertByteOrderMark="False">
+      </StringHttpBody>
+    </Request>
+    <Request Method="OPTIONS" Guid="ed77eb7f-fdc9-4f7d-8106-456cbe51cfaf" Version="1.1" Url="https://apps.applozic.com/rest/ws/message/list" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Content-Type" Value="application/json" />
+        <Header Name="Accept" Value="*/*" />
+        <Header Name="Referer" Value="http://localhost:2564/Jobs" />
+      </Headers>
+      <StringHttpBody ContentType="application/json" InsertByteOrderMark="False">
+      </StringHttpBody>
+    </Request>
+    <Request Method="GET" Guid="915c5e7e-14d7-4fcd-ad9c-772a7b1a551a" Version="1.1" Url="https://csi.gstatic.com/csi" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="http://localhost:2564/Jobs" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="v" Value="2" RecordedValue="2" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="s" Value="mapsapi3" RecordedValue="mapsapi3" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="v3v" Value="27.5" RecordedValue="27.5" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="action" Value="apiboot2" RecordedValue="apiboot2" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="libraries" Value="places" RecordedValue="places" CorrelationBinding="{{QueryStringParam1360.libraries}}" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="e" Value="10_1_0,10_2_0" RecordedValue="10_1_0,10_2_0" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="rt" Value="main.5" RecordedValue="main.5" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="POST" Guid="a34431c3-ef97-4d17-9ac4-1f9ed6995ede" Version="1.1" Url="https://apps.applozic.com/v2/tab/initialize.page" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Accept" Value="*/*" />
+        <Header Name="Referer" Value="http://localhost:2564/Jobs" />
+      </Headers>
+      <StringHttpBody ContentType="application/json" InsertByteOrderMark="False">ewAiAGEAcABwAGwAaQBjAGEAdABpAG8AbgBJAGQAIgA6ACIAMgAyADIAZQBhADAANABmADIAOABjADgANgA2AGQAMgA2AGIAZgBmADYAMgAzAGIAMgBhAGUANAA3ADYANgA1AGMAIgAsACIAdQBzAGUAcgBJAGQAIgA6ACIAZgBjAGYANgBmADIANQA4AC0AMgA1ADgANAAtADQAZgBlADkALQA5ADIAZgAzAC0AMgBiADEANwBjAGIAYgBjADcAOAA4ADUAIgAsACIAZABpAHMAcABsAGEAeQBOAGEAbQBlACIAOgAiAG4AZQB3AHUAcwBlAHIAQAB0AGUAcwB0AC4AYwBvAG0AIgAsACIAZQBuAGEAYgBsAGUARQBuAGMAcgB5AHAAdABpAG8AbgAiADoAdAByAHUAZQAsACIAYQBwAHAAVgBlAHIAcwBpAG8AbgBDAG8AZABlACIAOgAxADAAOAAsACIAYQB1AHQAaABlAG4AdABpAGMAYQB0AGkAbwBuAFQAeQBwAGUASQBkACIAOgAwAH0A</StringHttpBody>
+    </Request>
+    <Request Method="GET" Guid="b1b2f588-3bef-4fd8-a69e-cd4b8c743b52" Version="1.1" Url="http://localhost:2564/__browserLink/requestData/70e10297d2e84dbb91abe8c02e2fd604" ThinkTime="2" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Accept" Value="application/json, text/javascript, */*; q=0.01" />
+        <Header Name="X-Requested-With" Value="XMLHttpRequest" />
+        <Header Name="Referer" Value="http://localhost:2564/Jobs" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="version" Value="2" RecordedValue="2" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="5cade94a-bd56-4438-9341-a38acecf5b0d" Version="1.1" Url="https://apps.applozic.com:15675/stomp/info" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="http://localhost:2564/Jobs" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="t" Value="1481939723294" RecordedValue="1481939723294" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="865b4c60-c07d-48ba-a479-ad80c2afde7f" Version="1.1" Url="https://apps.applozic.com:15675/stomp/690/4gjlref5/websocket" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False" />
+    <Request Method="GET" Guid="1380dff8-b183-4990-afac-3ac6679b0a77" Version="1.1" Url="https://maps.googleapis.com/maps/api/js/AuthenticationService.Authenticate" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="http://localhost:2564/Jobs" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="" Value="1shttp%3A%2F%2Flocalhost%3A2564%2FJobs" RecordedValue="1shttp%3A%2F%2Flocalhost%3A2564%2FJobs" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="" Value="4sAIzaSyDKfWHzu9X7Z2hByeW4RRFJrD9SizOzZt4" RecordedValue="4sAIzaSyDKfWHzu9X7Z2hByeW4RRFJrD9SizOzZt4" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="callback" Value="_xdc_._6j317z" RecordedValue="_xdc_._6j317z" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="token" Value="130035" RecordedValue="130035" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="POST" Guid="8d7a3e05-98a5-4f09-a958-f88c7f081a49" Version="1.1" Url="http://localhost:40161/46bfb18f2cd1469181aac36573fad9bb/browserLinkSignalR/abort" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Accept" Value="text/plain, */*; q=0.01" />
+        <Header Name="Referer" Value="http://localhost:2564/Jobs" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="transport" Value="webSockets" RecordedValue="webSockets" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="connectionToken" Value="AQAAANCMnd8BFdERjHoAwE%2FCl%2BsBAAAAxcqHhV%2Fpq0CSttprBLs%2BzgAAAAACAAAAAAAQZgAAAAEAACAAAABkcjGA3vkJI3Ui3MLank87i%2F2XJaJGp6o4qrnz6BICvQAAAAAOgAAAAAIAACAAAADdswPKB3hpMDGtQsadypzPfwkzdLaFD7FKJ496OKz5GDAAAAATPOjJz9b3ia5V5Gk2Kk3DhX%2FqexOcN6M9%2Bno05Rev%2F6OV2IQdN%2B9CxpJikEMlH9hAAAAAb0%2BPj6uW%2BbIdCzzXsG7L3AZb%2FSmaIsCMjOXmEaAb%2Bq4vrFzeGHFqaDJys7pSxO7001iuT%2F8FwBUOegQOu6X7vg%3D%3D" RecordedValue="AQAAANCMnd8BFdERjHoAwE%2FCl%2BsBAAAAxcqHhV%2Fpq0CSttprBLs%2BzgAAAAACAAAAAAAQZgAAAAEAACAAAABkcjGA3vkJI3Ui3MLank87i%2F2XJaJGp6o4qrnz6BICvQAAAAAOgAAAAAIAACAAAADdswPKB3hpMDGtQsadypzPfwkzdLaFD7FKJ496OKz5GDAAAAATPOjJz9b3ia5V5Gk2Kk3DhX%2FqexOcN6M9%2Bno05Rev%2F6OV2IQdN%2B9CxpJikEMlH9hAAAAAb0%2BPj6uW%2BbIdCzzXsG7L3AZb%2FSmaIsCMjOXmEaAb%2Bq4vrFzeGHFqaDJys7pSxO7001iuT%2F8FwBUOegQOu6X7vg%3D%3D" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="requestUrl" Value="http%3A%2F%2Flocalhost%3A2564%2FJobs" RecordedValue="http%3A%2F%2Flocalhost%3A2564%2FJobs" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="browserName" Value="Internet+Explorer" RecordedValue="Internet+Explorer" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="userAgent" Value="Mozilla%2F5.0+(Windows+NT+10.0%3B+WOW64%3B+Trident%2F7.0%3B+.NET4.0C%3B+.NET4.0E%3B+.NET+CLR+2.0.50727%3B+.NET+CLR+3.0.30729%3B+.NET+CLR+3.5.30729%3B+.NET+CLR+1.1.4322%3B+LCTE%3B+rv%3A11.0)+like+Gecko" RecordedValue="Mozilla%2F5.0+(Windows+NT+10.0%3B+WOW64%3B+Trident%2F7.0%3B+.NET4.0C%3B+.NET4.0E%3B+.NET+CLR+2.0.50727%3B+.NET+CLR+3.0.30729%3B+.NET+CLR+3.5.30729%3B+.NET+CLR+1.1.4322%3B+LCTE%3B+rv%3A11.0)+like+Gecko" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+      <FormPostHttpBody />
+    </Request>
+    <Request Method="POST" Guid="06ad66c4-16b9-4126-ba73-5ec35750d480" Version="1.1" Url="http://localhost:40161/46bfb18f2cd1469181aac36573fad9bb/browserLinkSignalR/negotiate" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Content-Type" Value="application/x-www-form-urlencoded; charset=UTF-8" />
+        <Header Name="Accept" Value="text/plain, */*; q=0.01" />
+        <Header Name="Referer" Value="http://localhost:2564/" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="requestUrl" Value="http%3A%2F%2Flocalhost%3A2564%2F" RecordedValue="http%3A%2F%2Flocalhost%3A2564%2F" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="browserName" Value="Internet+Explorer" RecordedValue="Internet+Explorer" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="userAgent" Value="Mozilla%2F5.0+(Windows+NT+10.0%3B+WOW64%3B+Trident%2F7.0%3B+.NET4.0C%3B+.NET4.0E%3B+.NET+CLR+2.0.50727%3B+.NET+CLR+3.0.30729%3B+.NET+CLR+3.5.30729%3B+.NET+CLR+1.1.4322%3B+LCTE%3B+rv%3A11.0)+like+Gecko" RecordedValue="Mozilla%2F5.0+(Windows+NT+10.0%3B+WOW64%3B+Trident%2F7.0%3B+.NET4.0C%3B+.NET4.0E%3B+.NET+CLR+2.0.50727%3B+.NET+CLR+3.0.30729%3B+.NET+CLR+3.5.30729%3B+.NET+CLR+1.1.4322%3B+LCTE%3B+rv%3A11.0)+like+Gecko" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="clientProtocol" Value="1.3" RecordedValue="1.3" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="_" Value="1481939732478" RecordedValue="1481939732478" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+      <FormPostHttpBody />
+    </Request>
+    <Request Method="GET" Guid="e0a2cc16-338c-41c1-93fa-aac12ee0ea57" Version="1.1" Url="http://localhost:2564/__browserLink/requestData/cbc68db6d5a647639c00921667c77c36" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Accept" Value="application/json, text/javascript, */*; q=0.01" />
+        <Header Name="X-Requested-With" Value="XMLHttpRequest" />
+        <Header Name="Referer" Value="http://localhost:2564/" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="version" Value="2" RecordedValue="2" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+  </Items>
+  <ValidationRules>
+    <ValidationRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ValidateResponseUrl, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" DisplayName="Response URL" Description="Validates that the response URL after redirects are followed is the same as the recorded response URL.  QueryString parameters are ignored." Level="Low" ExectuionOrder="BeforeDependents" />
+    <ValidationRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ValidationRuleResponseTimeGoal, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" DisplayName="Response Time Goal" Description="Validates that the response time for the request is less than or equal to the response time goal as specified on the request.  Response time goals of zero will be ignored." Level="Low" ExectuionOrder="AfterDependents">
+      <RuleParameters>
+        <RuleParameter Name="Tolerance" Value="0" />
+      </RuleParameters>
+    </ValidationRule>
+  </ValidationRules>
+</WebTest>

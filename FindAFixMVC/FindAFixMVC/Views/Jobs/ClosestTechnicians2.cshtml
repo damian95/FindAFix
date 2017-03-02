@@ -1,0 +1,179 @@
+﻿
+@{
+    ViewBag.Title = "Locations";
+}
+
+<h2>GoogleMaps</h2>
+<head>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCltr_4hTmLvdTVWEuQ97mMZ6mTB_4YLCA&callback=myMap&libraries=places,geometry" async defer></script>
+</head>
+<script>
+    function myMap() {
+
+        var markers_on_map = [];
+        var geocoder = null;
+        var dist;
+
+        //Saves the positions history
+        var path = [];
+
+        var myLatLng = { lat: 43.6535, lng: -79.3832 };
+
+        map = new google.maps.Map(document.getElementById('myMap'), {
+            center: myLatLng,
+            zoom: 18,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        });
+
+
+        var locations = [
+            ["Bathroom", 43.612933, -79.605797, 5],
+            ["HVAC", 43.591163, -79.647053, 4],
+            ["Construction", 43.5929, -79.6430, 3],
+            ["Electrician", 43.5931, -79.5685, 2],
+            ["Plumbing", 43.5584, -79.7120, 1]
+        ];
+
+
+        for (var i = 0; i < locations.length; i++) {
+            var points = locations[i];
+            var marker = new google.maps.Marker({
+                position: new google.maps.LatLng(points[1], points[2]),
+                map: map
+            });
+
+        }
+
+
+        map.addListener('click', function (e) {
+            placeMarkerAndPanTo(e.latLng, map);
+        });
+
+        document.getElementById("showPoints").addEventListener("click", function(){
+            var radius_km = document.getElementById("radius_km").value;
+
+
+            if (radius_km == 1) {
+                map.setZoom(17);
+            }
+            if (radius_km == 5) {
+                map.setZoom(16);
+            }
+            if (radius_km == 10) {
+                map.setZoom(15);
+            }
+            if (radius_km == 15) {
+                map.setZoom(14);
+            }
+            if (radius_km == 20) {
+                map.setZoom(13);
+            }
+
+
+        });
+
+        function distance(lat1, lon1, lat2, lon2, unit) {
+            var radlat1 = Math.PI * lat1 / 180
+            var radlat2 = Math.PI * lat2 / 180
+            var radlon1 = Math.PI * lon1 / 180
+            var radlon2 = Math.PI * lon2 / 180
+            var theta = lon1 - lon2
+            var radtheta = Math.PI * theta / 180
+            dist = Math.sin(radlat1) * Math.sin(radlat2) + Math.cos(radlat1) * Math.cos(radlat2) * Math.cos(radtheta);
+            dist = Math.acos(dist)
+            dist = dist * 180 / Math.PI
+            dist = dist * 60 * 1.1515
+            if (unit == "K") {
+                dist = dist * 1.609344
+            }
+            if (unit == "N") {
+                dist = dist * 0.8684
+            }
+            return dist;
+        }
+
+
+	    var infoWindow = new google.maps.InfoWindow({map: map});
+
+
+	    //HTML5 GeoLocation(Locating Position)
+	    if(navigator.geolocation){
+	        navigator.geolocation.getCurrentPosition(function (position) {
+
+	            //Sets the location
+	            var pos = {
+	                lat: position.coords.latitude,
+	                lng: position.coords.longitude
+	            };
+
+                
+	            google.maps.event.addListener(map, 'click', function (event) {
+
+	                var lineDistance = new google.maps.Polyline({
+	                    path: [
+                            { lat: position.coords.latitude, lng: position.coords.longitude },
+                            { lat: 43.5584, lng: -79.7120 }
+	                    ],
+	                    geodesic: true,
+	                    strokeColor: '#FF0000',
+	                    strokeOpacity: 1.0,
+	                    strokeWeight: 2,
+	                    map: map
+	                });
+
+	                //alert("The distance between you and the Technician is: " + dist);
+	                //console.log("The distance between you and the Technician is: " + dist);
+
+	            });
+
+
+	            infoWindow.setPosition(pos);
+	            infoWindow.setContent('Your Location');
+	            map.setCenter(pos);
+
+	            distance(position.coords.latitude, position.coords.longitude, 43.5584, -79.7120, "K");
+		    }, function(){
+			    handleLocationError(true, infoWindow, map.getCenter());
+		    });
+		    } else {
+			    //Browser does not support Geolocation
+			    handleLocationError(false, infoWindow, map.getCenter());
+	    }
+
+    }
+
+    function placeMarkerAndPanTo(latLng, map){
+	    var marker = new google.maps.Marker({
+		    position: latLng,
+		    map: map
+	    });
+	    map.panTo(latLng);
+    }
+
+
+    function handleLocationError(browserHasGeoLocation, infoWindow, pos){
+	    infoWindow.setPosition(pos);
+	    infoWindow.setContent(browserHasGeoLocation ?
+							    'Error: The Geolocation service failed.' :
+							    'Error: Your browser does not support Geolocation.');
+    }
+
+
+</script>
+
+@using (Html.BeginForm())
+{
+    <select id="radius_km">
+        <option value="1">1km</option>
+        <option value="5">5km</option>
+        <option value="10">10km</option>
+        <option value="15">15km</option>
+        <option value="20">20km</option>
+    </select>
+}
+
+<div><button id="showPoints">Show</button></div>
+
+<div id="myMap" style="width:100%; height:500px"></div>
+
+

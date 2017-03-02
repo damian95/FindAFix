@@ -1,0 +1,92 @@
+﻿@using Microsoft.AspNet.Identity
+@{
+    ViewBag.Title = "UserHome";
+}
+
+<!-- Header -->
+<div class="w3-container w3-teal w3-center w3-padding-64">
+    <h1 class="w3-margin w3-jumbo">Find A Fix</h1>
+
+    <div class="w3-content" style="max-width:800px;position:relative">
+
+        <div class="w3-display-container mySlides">
+            <img src="@Url.Content("http://www.weldenhardware.com/images/logo_pic.gif")" style="width:450px; height:300px">
+            <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+                Find A Fix
+            </div>
+        </div>
+
+        <div class="w3-display-container mySlides">
+            <img src="@Url.Content("~/Content/Images/device.jpg")" style="width:450px; height:300px">
+            <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
+                Available on all platforms
+            </div>
+        </div>
+
+        <div class="w3-display-container mySlides">
+            <img src="@Url.Content("http://www.adweek.com/socialtimes/files/2014/11/messaging.jpg")" style="width:450px; height:300px">
+            <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black">
+                User to User Messaging
+            </div>
+        </div>
+
+        <div class="w3-display-container mySlides">
+            <img src="@Url.Content("http://www.brandsoftheworld.com/sites/default/files/styles/logo-thumbnail/public/082015/google_maps_2014.png?itok=sNP-tyvI")" style="width:450px; height:300px">
+            <div class="w3-display-topright w3-large w3-container w3-padding-16 w3-black">
+                Find work near you
+            </div>
+        </div>
+
+
+        <a class="w3-btn-floating w3-hover-dark-grey" style="position:absolute;top:52%;left:0;z-index:0" onclick="plusDivs(-1)">&#10094;</a>
+        <a class="w3-btn-floating w3-hover-dark-grey" style="position:absolute;top:52%;right:0;z-index:0" onclick="plusDivs(1)">&#10095;</a>
+
+        <div class="w3-center w3-section w3-large w3-text-white w3-display-bottomleft" style="width:100%">
+            <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+            <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+            <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+            <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(4)"></span>
+        </div>
+
+    </div>
+
+
+    <script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " w3-white";
+}
+    </script>
+    <br />
+    <p class="w3-xlarge">Try it Now!</p>
+</div>
+
+
+
+
+<div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+    <h1 class="w3-margin w3-xlarge">Find a fix for your problems</h1>
+    <h5>A new way to fix your problems. It's fast. It's easy. Also, free.</h5>
+</div>

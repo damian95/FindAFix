@@ -1,0 +1,113 @@
+﻿@model FindAFixMVC.Models.DBContext.UserJob
+@using FindAFixMVC.Models.DBContext
+
+@{
+    ViewBag.Title = "Details";
+}
+
+@if (User.IsInRole("Technician"))
+{
+    Layout = "~/Views/Shared/_LayoutTechnician.cshtml";
+}
+
+<script>
+    function setClickedValue(id) {
+        var txtClickedValue = document.getElementById("clickedValue").value;
+        txtClickedValue = id;
+        document.getElementById("clickedValue").value = id;
+    }
+</script>
+
+<br />
+<br />
+<h2>Details</h2>
+
+<div>
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.JobTitle)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.JobTitle)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.JobDescription)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.JobDescription)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.JobType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.JobType)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Date)
+        </dd>
+
+    </dl>
+</div>
+@if (User.IsInRole("Technician"))
+{
+    <a class="w3-btn w3-blue" onclick="setClickedValue(@Model.Id)" data-toggle="modal" data-target=".bootstrapmodal"><span class="glyphicon"></span>Take</a>
+    <br />
+}
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @if (User.IsInRole("User"))
+    {
+        @Html.ActionLink("Back to List", "Index")
+    }
+
+    @if (User.IsInRole("Technician"))
+    {
+        @Html.ActionLink("Back to List", "AvailableJobs")
+    }
+    
+</p>
+<input id="clickedValue" type="hidden">
+@* place holder for the form to submit proposal *@
+<div class="modal fade bootstrapmodal">
+
+    <div class="modal-dialog">
+        @using (Html.BeginForm())
+            {
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-title">Create Proposal</div>
+                </div>
+                <div class="modal-body">
+                    @using (Html.BeginForm())
+                    {
+                        @Html.Partial("_ProposalPartial", new Proposal())
+                        <div class="form-group">
+                            <div class="col-md-offset-1 col-md-10">
+
+                                <input type="submit" onclick="setJobId()" value="Send" class="w3-btn w3-blue" />
+                            </div>
+                        </div>
+                    }
+
+                </div>
+            </div>
+        }
+    </div>
+    <script>
+                function setJobId() {
+                    var txtClickedValue = document.getElementById("clickedValue").value;
+                    document.getElementById("UserJob_Id").value = txtClickedValue;
+                }
+
+    </script>
+</div>

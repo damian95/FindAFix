@@ -1,0 +1,74 @@
+﻿@using FindAFixMVC.Models
+@model LoginViewModel
+@{
+    ViewBag.Title = "Log in";
+}
+
+@{
+    Layout = "~/Views/Shared/_LayoutNoLogin.cshtml";
+}
+<center>
+    <br />
+    <br />
+    <h2>Log in</h2>
+    <div>
+        <div>
+            <section id="loginForm">
+                @using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+            {
+                    @Html.AntiForgeryToken()
+                    <br />
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                    <div class="form-group">
+                        <div class="w3-label w3-text-blue" style="font-weight:bold">
+                            @Html.LabelFor(m => m.Email, new { @class = "control-label" })
+                        </div>
+                        <div style="padding-bottom:10px"></div>
+                        <div>
+                            @Html.TextBoxFor(m => m.Email, new { @style = "width:300px; border-style:solid; border-width:3px", @class = "w3-border-indigo w3-light-gray" })
+                            @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="w3-label w3-text-blue" style="font-weight:bold">
+                            @Html.LabelFor(m => m.Password, new { @class = "control-label" })
+                        </div>
+                        <div style="padding-bottom:10px"></div>
+                        <div>
+                            @Html.PasswordFor(m => m.Password, new { @style = "width:300px; border-style:solid; border-width:3px", @class = "w3-border-indigo w3-light-gray" })
+                            @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div>
+                            <div class="checkbox-inline">
+                                @Html.CheckBoxFor(m => m.RememberMe)
+                                <div class="w3-label" style="font-weight:bold">
+                                    @Html.LabelFor(m => m.RememberMe)
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div>
+                            <input type="submit" value="Log in" class="w3-btn w3-hover-blue" style="width:100px" />
+                        </div>
+                    </div>
+                    <p>
+                        <div style="text-decoration:underline; text-decoration-color:navy">
+                            @Html.ActionLink("Register as a new user", "Register")
+                        </div>
+                    </p>
+                        <p>
+                            @Html.ActionLink("Forgot your password?", "ForgotPassword")
+                        </p>
+                }
+            </section>
+        </div>
+
+    </div>
+</center>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

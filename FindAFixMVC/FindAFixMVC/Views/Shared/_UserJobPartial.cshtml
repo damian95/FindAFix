@@ -1,0 +1,22 @@
+﻿@model FindAFixMVC.Models.DBContext.UserJob
+
+@*<fieldset>*@
+    <td>
+        @Html.DisplayFor(model => model.JobTitle)
+    </td>
+    <td>
+        @Html.DisplayFor(model => model.JobDescription)
+    </td>
+    <td>
+        @Html.DisplayFor(model => model.JobType)
+    </td>
+    <td>
+        @Html.DisplayFor(model => model.Date)
+    </td>
+    <td>
+        @Html.HiddenFor(model => model.Latitude)
+    </td>
+    <td>
+        @Html.HiddenFor(model => model.Longitude)
+    </td>
+@*</fieldset>*@

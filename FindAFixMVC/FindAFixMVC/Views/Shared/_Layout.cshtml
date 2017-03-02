@@ -1,0 +1,262 @@
+﻿@using Microsoft.AspNet.Identity
+@using FindAFixMVC.Models
+@using FindAFixMVC.Models.DBContext
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Find A Fix</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    <style>
+        body, h1, h2, h3, h4, h5, h6 {
+            font-family: "Lato", sans-serif;
+        }
+
+        .w3-navbar, h1, button {
+            font-family: "Montserrat", sans-serif;
+        }
+
+        .fa-anchor, .fa-coffee {
+            font-size: 200px;
+        }
+
+        .mySlides {
+            display: none;
+        }
+
+        .w3-left, .w3-right, .w3-badge {
+            cursor: pointer;
+        }
+
+        .w3-badge {
+            height: 13px;
+            width: 13px;
+            padding: 0;
+        }
+    </style>
+
+    @if (User.Identity.IsAuthenticated)
+    {
+        <script type="text/javascript">
+       (function(d, m){var s, h;
+       s = document.createElement("script");
+       s.type = "text/javascript";
+       s.async=true;
+       s.src="https://apps.applozic.com/sidebox.app";
+       h=document.getElementsByTagName('head')[0];
+       h.appendChild(s);
+       window.applozic=m;
+       m.init=function(t){m._globals=t;}})(document, window.applozic || {});
+        </script>
+
+        <script type="text/javascript">
+
+        window.applozic.init({
+            appId: "222ea04f28c866d26bff623b2ae47665c",      //Get your application key from https://www.applozic.com
+            userId: "@HttpContext.Current.User.Identity.GetUserId()",                     //Logged in user's id, a unique identifier for user
+            userName: "@HttpContext.Current.User.Identity.GetUserName()",                 //User's display name
+            imageLink: '',                     //User's profile picture url
+          //  email: 'customer1@customer.com',                         //optional
+            // contactNumber: '',                  //optional, pass with internationl code eg: +16508352160
+            desktopNotification: true,
+            source: '1',                          // optional, WEB(1),DESKTOP_BROWSER(5), MOBILE_BROWSER(6)
+            notificationIconLink: 'https://www.applozic.com/favicon.ico',    //Icon to show in desktop notification, replace with your icon
+            authenticationTypeId: '1',          //1 for password verification from Applozic server and 0 for access Token verification from your server
+            //accessToken: '',                    //optional, leave it blank for testing purpose, read this if you want to add additional security by verifying password from your server https://www.applozic.com/docs/configuration.html#access-token-url
+            locShare: true,
+            googleApiKey: "AIzaSyDKfWHzu9X7Z2hByeW4RRFJrD9SizOzZt4",   // your project google api key
+            // googleMapScriptLoaded : false,   // true if your app already loaded google maps script
+            //autoTypeSearchEnabled : true,     // set to false if you don't want to allow sending message to user who is not in the contact list
+
+           // onInit : function(response) {
+           //     if (response === "success") {
+           //         // login successful, perform your actions if any, for example: load contacts, getting unread message count, etc
+           //         window.alert("Currently logged in");
+           //    } else {
+           //         // error in user login/register (you can hide chat button or refresh page)
+           //         window.alert("Note: you must be logged in to use chat services!");
+           //    }
+           //},
+
+        });
+        </script>
+    }
+
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <ul class="w3-navbar w3-cyan w3-card-2 w3-top w3-left-align w3-large" id="category-tabs" style="overflow:visible">
+        <li class="w3-hide-large w3-opennav w3-right">
+            <a class="w3-padding-large w3-large w3-black" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars" id="menuicon"></i></a>
+        </li>
+        <li>@Html.ActionLink("Find A Fix", "UserHome", "Home", null, new { @class = "w3-padding-large w3-cyan" })</li>
+        <li class="w3-hide-small w3-hide-medium w3-dropdown-hover w3-hover-grey">
+
+            @using (var db = new ApplicationDbContext())
+            {
+                //variable to keep track if an unseen proposal has been seen
+                var numsOfProps = 0;
+                var uid = HttpContext.Current.User.Identity.GetUserId();
+                //get all jobs that user has created
+                var uJobs = (from UserJob in db.UserJobs
+                             where UserJob.AspNetUser_Id == uid
+                             select UserJob);
+                //itterate though each job and get proposals associated with it
+                foreach (var job in uJobs)
+                {
+                    var proposals = (from Proposal in db.Proposals
+                                     where Proposal.UserJob_Id == job.Id
+                                     select Proposal);
+                    //itterate though each proposal an check if it has been seen
+                    foreach (var prop in proposals)
+                    {
+                        if (job.Technician_Id == 0 && !prop.UserSeen && numsOfProps == 0)
+                        {
+                            numsOfProps++;
+                            <a class="w3-hover-grey w3-padding-large w3-text-lime" href="#">Jobs <i class="fa fa-caret-down"></i></a>
+                        }
+                    }
+                }
+                if (numsOfProps == 0)
+                {
+                    <a class="w3-hover-grey w3-padding-large" href="#">Jobs <i class="fa fa-caret-down"></i></a>
+                }
+            }
+
+            @*<a class="w3-hover-grey w3-padding-large" href="#">Jobs <i class="fa fa-caret-down"></i></a>*@
+            <div class="w3-dropdown-content w3-indigo w3-card-4">
+
+                @using (var db = new ApplicationDbContext())
+                {
+                    //variable to keep track if an unseen proposal has been seen
+                    var numsOfProps = 0;
+                    var uid = HttpContext.Current.User.Identity.GetUserId();
+                    //get all jobs that user has created
+                    var uJobs = (from UserJob in db.UserJobs
+                                 where UserJob.AspNetUser_Id == uid
+                                 select UserJob);
+                    //itterate though each job and get proposals associated with it
+                    foreach (var job in uJobs)
+                    {
+                        var proposals = (from Proposal in db.Proposals
+                                         where Proposal.UserJob_Id == job.Id
+                                         select Proposal);
+                        //itterate though each proposal an check if it has been seen 
+                        foreach (var prop in proposals)
+                        {
+                            if (job.Technician_Id == 0 && !prop.UserSeen && numsOfProps == 0)
+                            {
+                                numsOfProps++;
+                                @Html.ActionLink("View jobs", "Index", "Jobs", null, new { @class = "w3-padding-large w3-hover-black w3-text-light-green" })
+                            }
+                        }
+                    }
+                    if (numsOfProps == 0)
+                    {
+                        @Html.ActionLink("My Jobs", "Index", "Jobs", null, new { @class = "w3-padding-large w3-hover-black" })
+                    }
+                }
+                @Html.ActionLink("Make Job", "Create", "Jobs", null, new { @class = "w3-padding-large w3-hover-black" })
+            </div>
+        </li>
+        <li class="w3-hide-small w3-hide-medium w3-dropdown-hover w3-hover-grey">
+            <a class="w3-hover-grey w3-padding-large" href="#">Categories <i class="fa fa-caret-down"></i></a>
+            <div class="w3-dropdown-content w3-indigo w3-card-4">
+                @Html.ActionLink("Basement Finishing", "CategoryJobs", "Jobs", new { @id = "1" }, new { @class = "w3-hover-black" })
+                @Html.ActionLink("Fencing", "CategoryJobs", "Jobs", new { @id = "2" }, new { @class = "w3-hover-black" })
+                @Html.ActionLink("Floors & Walls", "CategoryJobs", "Jobs", new { @id = "3" }, new { @class = "w3-hover-black" })
+                @Html.ActionLink("Gardening", "CategoryJobs", "Jobs", new { @id = "4" }, new { @class = "w3-hover-black" })
+                @Html.ActionLink("Plumbing", "CategoryJobs", "Jobs", new { @id = "5" }, new { @class = "w3-hover-black" })
+                @Html.ActionLink("Windows", "CategoryJobs", "Jobs", new { @id = "6" }, new { @class = "w3-hover-black" })
+            </div>
+        </li>
+        <li>@Html.ActionLink("API", "Index", "Help", new { area = "" }, new { @class = "w3-padding-large w3-cyan w3-hover-grey" })</li>
+        <li><div class="w3-text-cyan">FindAFix-FindAFix</div></li>
+        @Html.Partial("_LoginPartial")
+    </ul>
+
+
+
+
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-hide w3-hide-large w3-top" style="margin-top:51px">
+        <ul class="w3-navbar w3-left-align w3-large w3-blue">
+            <li>@Html.ActionLink("Make Job", "Create", "Jobs", null, new { @class = "w3-padding-large w3-hover-grey" })</li>
+            <li>@Html.ActionLink("My Jobs", "Index", "Jobs", null, new { @class = "w3-padding-large w3-hover-grey" })</li>
+            <li class="w3-dropdown-hover w3-hover-grey">
+                <a class="w3-hover-grey w3-padding-large" href="#">Categories <i class="fa fa-caret-down"></i></a>
+                <div class="w3-dropdown-content w3-indigo w3-card-4">
+                    @Html.ActionLink("Basement Finishing", "CategoryJobs", "Jobs", new { @id = "1" }, new { @class = "w3-hover-black", @style = "padding-left:50px" })
+                    @Html.ActionLink("Fencing", "CategoryJobs", "Jobs", new { @id = "2" }, new { @class = "w3-hover-black", @style = "padding-left:50px" })
+                    @Html.ActionLink("Floors & Walls", "CategoryJobs", "Jobs", new { @id = "3" }, new { @class = "w3-hover-black", @style = "padding-left:50px" })
+                    @Html.ActionLink("Gardening", "CategoryJobs", "Jobs", new { @id = "4" }, new { @class = "w3-hover-black", @style = "padding-left:50px" })
+                    @Html.ActionLink("Plumbing", "CategoryJobs", "Jobs", new { @id = "5" }, new { @class = "w3-hover-black", @style = "padding-left:50px" })
+                    @Html.ActionLink("Windows", "CategoryJobs", "Jobs", new { @id = "6" }, new { @class = "w3-hover-black", @style = "padding-left:50px" })
+                </div>
+            </li>
+            @Html.Partial("_LoginPartialMobile")
+        </ul>
+    </div>
+
+    @RenderBody()
+
+    <!-- Footer -->
+    <footer class="w3-container w3-padding-32 w3-center w3-opacity">
+        <div class="w3-xlarge w3-padding-32">
+            <a href="https://www.facebook.com/Find-A-Fix-1785125571761164/" class="w3-hover-text-indigo w3-show-inline-block"><i class="fa fa-facebook-official"></i></a>
+            <a href="https://www.pinterest.com/findfixing/" class="w3-hover-text-red w3-show-inline-block"><i class="fa fa-pinterest-p"></i></a>
+            <a href="https://twitter.com/FindFixing" class="w3-hover-text-light-blue w3-show-inline-block"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.flickr.com/photos/145138282@N02/" class="w3-hover-text-grey w3-show-inline-block"><i class="fa fa-flickr"></i></a>
+        </div>
+        <p>&copy; Find A Fix</p>
+    </footer>
+
+    <script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+    </script>
+
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/jquery")
+    @RenderSection("scripts", required: false)
+
+    @using(var db = new ApplicationDbContext())
+    {
+        var uid = HttpContext.Current.User.Identity.GetUserId();
+        var uJobs = (from UserJob in db.UserJobs
+                     where UserJob.AspNetUser_Id == uid
+                     select UserJob);
+
+        foreach(var job in uJobs)
+        {
+            var proposals = (from Proposal in db.Proposals
+                             where Proposal.UserJob_Id == job.Id
+                             select Proposal);
+            foreach(var prop in proposals)
+            {
+                if (job.Technician_Id == 0 && !prop.UserSeen)
+                {
+
+                }
+            }
+        }
+    }
+</body>
+</html>

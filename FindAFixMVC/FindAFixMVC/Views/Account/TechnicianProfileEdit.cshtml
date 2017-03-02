@@ -1,0 +1,88 @@
+﻿@model FindAFixMVC.Models.DBContext.TechnicianProfile
+
+@{
+    ViewBag.Title = "TechnicianProfileEdit";
+}
+
+@{
+    Layout = "~/Views/Shared/_LayoutTechnician.cshtml";
+}
+
+<center>
+    <br />
+    <br />
+
+    <h2>Profile Edit</h2>
+
+
+    @using (Html.BeginForm("TechnicianProfileEdit", "Account", FormMethod.Post, new { enctype = "multipart/form-data" }))
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-horizontal">
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            @Html.HiddenFor(model => model.Id)
+
+            @{
+                var base64 = Convert.ToBase64String(Model.TechPicture);
+                var imgSrc = String.Format("data:image/gif;base64,{0}", base64);
+            }
+            
+            <img src="@imgSrc" width="30%" height="30%" style="border-style:solid; border-width:3px" class="w3-border-indigo" id="profileImg"/>
+            <div style="padding-bottom:10px"></div>
+            <input type="file" name="newImage" id="newImage" onchange="loadFile(event)"/>
+            <script>
+                var loadFile = function(event) {
+                    var reader = new FileReader();
+                    reader.onload = function(){
+                    var output = document.getElementById('profileImg');
+                    output.src = reader.result;
+                    };
+                    reader.readAsDataURL(event.target.files[0]);
+                };
+            </script>
+
+
+            <div class="form-group">
+                @Html.HiddenFor(model => model.techId, htmlAttributes: new { @class = "control-label" })
+                <div>
+                    @Html.HiddenFor(model => model.techId, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.techId, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="w3-label w3-text-blue" style="font-weight:bold">
+                    @Html.LabelFor(model => model.Description, htmlAttributes: new { @class = "control-label" })
+                </div>
+                <div style="padding-bottom:10px"></div>
+                <div>
+                    
+                    @Html.TextAreaFor(model => Model.Description, new { @style = "width:300px; height:200px; border-style:solid; border-width:3px", @class = "w3-border-indigo w3-light-gray" })
+                    @Html.ValidationMessageFor(model => model.Description, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.HiddenFor(model => model.Rating, htmlAttributes: new { @class = "control-label" })
+                <div>
+                    @Html.HiddenFor(model => model.Rating, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.Rating, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+           
+
+            <div class="form-group">
+                <div>
+                    <input type="submit" value="Save" class="w3-btn w3-hover-blue" style="width:100px" />
+                </div>
+            </div>
+        </div>
+    }
+
+</center>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

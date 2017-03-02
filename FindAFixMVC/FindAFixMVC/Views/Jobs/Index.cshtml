@@ -1,0 +1,92 @@
+﻿@model IEnumerable<FindAFixMVC.Models.DBContext.UserJob>
+@using Microsoft.AspNet.Identity
+@using FindAFixMVC.Models.DBContext
+@using FindAFixMVC.Models
+
+@{
+    ViewBag.Title = "Index";
+}
+
+@if(User.IsInRole("Technician"))
+{
+    Layout = "~/Views/Shared/_LayoutTechnician.cshtml";
+}
+<center>
+    <br />
+    <br />
+    <h2>My Jobs</h2>
+    @if (User.IsInRole("User"))
+    {
+        <p>
+            <input type="button" class="w3-btn w3-blue" value="Create New" onclick="location.href='@Url.Action("Create", "Jobs")'" />
+        </p>
+    }
+    
+    <div class="w3-responsive">
+        <table class="w3-table-all w3-hoverable">
+            <thead>
+                <tr class="w3-grey">
+                    <th>
+                        Job Title
+                    </th>
+                    <th>
+                        Description
+                    </th>
+                    <th>
+                        Type
+                    </th>
+                    <th>
+                        Date
+                    </th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+
+
+
+            @foreach (var item in Model)
+            {
+                <tr class="w3-hover-black w3-cyan">
+                    @Html.Partial("_UserJobPartial", item)
+
+                    <td>
+                        @if (User.IsInRole("User"))
+                        {
+                            using (var db = new ApplicationDbContext())
+                            {
+                                var proposals = (from Proposal in db.Proposals
+                                                 where Proposal.UserJob_Id == item.Id
+                                                 select Proposal);
+                                var seen = false;
+                                foreach (var prop in proposals)
+                                {
+                                    if (!prop.UserSeen)
+                                    {
+                                        seen = true;
+                                    }
+                                }
+                                if (seen)
+                                {
+                                    @Html.ActionLink(" Proposals", "Proposals", new { id = item.Id }, new { @class = "w3-light-green" })
+                                }
+                                else
+                                {
+                                    @Html.ActionLink(" Proposals", "Proposals", new { @id = item.Id })
+                                }
+                            }
+                        }
+                        @if (User.IsInRole("Technician"))
+                        {
+                            <a href="#" class="applozic-launcher" data-mck-id="@item.AspNetUser_Id" data-mck-name="hjvhjhjfjhf"><img src="~/Content/Images/message.png" height="40px" width="40px" /></a>
+                        }
+
+
+                    </td>
+                </tr>
+            }
+
+        </table>
+    </div>
+</center>

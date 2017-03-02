@@ -1,0 +1,111 @@
+﻿@model IEnumerable<FindAFixMVC.Models.DBContext.UserJob>
+@using FindAFixMVC.Models.DBContext                        
+
+@{
+    ViewBag.Title = "Available Jobs";
+    var pid = 0;
+}
+
+@{
+    Layout = "~/Views/Shared/_LayoutTechnician.cshtml";
+}
+
+<script>
+    function setClickedValue(id) {
+        var txtClickedValue = document.getElementById("clickedValue").value;
+        txtClickedValue = id;
+        document.getElementById("clickedValue").value = id;
+    }
+</script>
+<center>
+    <br />
+    <br />
+    <h2>Available Jobs</h2>
+
+    <br />
+    <div class="w3-responsive">
+        <table class="w3-table-all w3-hoverable">
+            <thead>
+                <tr class="w3-grey">
+                    <th>
+                        Job Title
+                    </th>
+                    <th>
+                        Description
+                    </th>
+                    <th>
+                        Type
+                    </th>
+                    <th>
+                        Date
+                    </th>
+                    <th></th>
+                </tr>
+            </thead>
+
+            @foreach (var item in Model)
+            {
+                <tr class="w3-hover-black w3-cyan">
+                    <td>
+                        @Html.DisplayFor(modelItem => item.JobTitle)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.JobDescription)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.JobType)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Date)
+                    </td>
+                    <td>
+                        @if (User.IsInRole("Technician"))
+                        {
+                            <a href="#" class="applozic-launcher" data-mck-id="@item.AspNetUser_Id" data-mck-name="hjvhjhjfjhf"><img src="~/Content/Images/message.png" height="40px" width="40px" /></a>
+                        }
+                        <a class="w3-btn w3-blue" onclick="setClickedValue(@item.Id)" data-toggle="modal" data-target=".bootstrapmodal"><span class="glyphicon"></span>Take</a>
+                    </td>
+
+                </tr>
+            }
+        </table>
+        </div>
+        <input id="clickedValue" type="hidden">
+
+        @* place holder for the form to submit proposal *@
+        <div class="modal fade bootstrapmodal">
+
+            <div class="modal-dialog">
+                @using (Html.BeginForm())
+            {
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <div class="modal-title">Create Proposal</div>
+                        </div>
+                        <div class="modal-body">
+                            @using (Html.BeginForm())
+                            {
+                                @Html.Partial("_ProposalPartial", new Proposal())
+                                <div class="form-group">
+                                    <div class="col-md-offset-1 col-md-10">
+
+                                        <input type="submit" onclick="setJobId()" value="Send" class="w3-btn w3-blue" />
+                                    </div>
+                                </div>
+                            }
+
+                        </div>
+                    </div>
+                }
+            </div>
+            <script>
+                function setJobId() {
+                    var txtClickedValue = document.getElementById("clickedValue").value;
+                    document.getElementById("UserJob_Id").value = txtClickedValue;
+                }
+
+            </script>
+        </div>
+</center>
+
+
